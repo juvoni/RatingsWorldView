@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+	<title>S&amp;P Ratings World View</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<script src = "js/Country.js"></script>
+	<link rel="stylesheet" href="css/jquery-jvectormap.css" type="text/css" media="screen"/>
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="css/flags.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/cupertino/jquery-ui-1.8.14.custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">	
+    if (typeof jQuery == 'undefined') 
+    {
+		document.write(unescape("%3Cscript src='/js/jquery-1.7.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+	</script>
+    <link href="css/ui.slider.extras.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r49/Three.js"></script>
+
+	
+	<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
+
+	<script src="js/jquery-jvectormap.js"></script>
+	<script src="js/jquery.sparkline.min.js"></script>
+	<script src="js/jquery-jvectormap-world-en.js"></script>
+	<script src="js/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
+	<script src="js/selectToUISlider.jQuery.js" type="text/javascript"></script> 
+	<script src="js/jvmSlider.js" type="text/javascript"></script>
+	<!--<script src="vendor/three.js/Three.js"></script>-->
+	<script src="js/jquery.reject.js"></script>
+	<script src="js/spin.min.js"></script>
+	<script src="vendor/three.js/Detector.js"></script>
+	<script src="fonts/helvetiker_regular.typeface.js"></script>
+
+	<!-- https://github.com/mrdoob/stats.js -->
+	<!--<script src="vendor/three.js/Stats.js"></script>-->
+	
+
+	<script src="vendor/threex.dragpancontrols.js"></script>
+	<script src="js/3dSov.js"></script>
+
+
+<script>
+$(document).ready(function() {
+
+	
+var threeD;
+ $('#threeContainer').hide();
+	$('#CountryIdentifier').hide();
+ // toggles the slickbox on clicking the noted link 
+	slideState = true; 
+
+  $('.slide').click(function() {
+    $('#threeContainer').toggle(400);
+	
+	if(slideState){
+		slideState = false;	
+		$('.slide').css({"background-position": "-78px -10px"});
+	} 
+
+	else{
+		slideState = true;
+		$('.slide').css({"background-position": "-30px -10px"});
+	}
+    return false;
+  });
+
+	$('ul.ticker li:first-child').css({'border-top':'none'});
+	$('ul.ticker li:last-child').css({'border-bottom':'none'});
+
+	// var switchT = $('.tSwitch');
+	// switchT.on({
+	//	mouseenter:function(){switchT.animate({opacity: 1}, 700)},
+	//	mouseleave:function(){switchT.animate({opacity: 0.3}, 700)}
+	// });
+	// var state = true;
+	// switchT.click(function(event) {
+	//	if (state) {
+	//		state = false;
+	//		switchT.css({"background-position": "0 -48px"});
+	//		$('html').css({"background":"#dde3e6"});
+	//		$('#map').vectorMap('set', 'backgroundColor', '#dde3e6');
+	  		
+
+	//	}
+	//	else{
+	//		state = true;
+	//		switchT.css({"background-position": "0 0"});
+	//		$('html').css({"background": "#FFFFFF"});
+	//		$('#map').vectorMap('set', 'backgroundColor', '#FFFFFF');
+
+	//	}
+	// });
+	
+});
+
+
+</script>		
+</head>
+
+<body>
+	<header>
+
+		<img class = "logo"src="images/SP_RatingsService_1.png" alt="S&amp;P Rating's Logo">
+<h1 class ="title">Sovereign Ratings World View</h1>
+		<!-- Dyanmic labels for period and totals -->
+		<div id="period">Year:</div> 
+	</header>
+     
+	<div id="container">
+	       
+		<div id="map" class ="content">
+			<div id="loadingDiv"><img src="images/ajax-loader.gif" alt=""></div>
+		</div>
+	    
+			<button id="play"></button>
+	        <form action="#">
+	            <fieldset>
+	                <select name="date" id="date">
+						<option value="2000" selected="selected">2000</option>
+						<option value="2001">2001</option>
+						<option value="2002">2002</option>
+						<option value="2003">2003</option>
+						<option value="2004">2004</option>
+						<option value="2005">2005</option>
+						<option value="2006">2006</option>
+						<option value="2007">2007</option>
+						<option value="2008">2008</option>
+						<option value="2009">2009</option>
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+	                </select>
+	            </fieldset>
+	        </form>
+	        <div id="conData">
+		<div class="rtgActSection">
+		
+	        </div>
+			<div class="gdpSection">
+
+						<ul class="gcon">
+						<li>
+							<p class="cName"></p>
+						</li>
+
+						<li>
+							<p class="gdpData"></p>
+						</li>
+						<li>
+							<div class = "arrow"></div><p class="gdpChange"></p><p class="gdpPerChange"></p><span class = "gdpLine"></span>
+						</li>
+					</ul>
+						
+				
+					<p class="gdpPer"></p>
+				</div>
+	        </div>
+	        
+	        <div class="legend">
+				<div class="scaleInfo">
+					<ul>
+						<li>AAA :</li>
+						<li>AA :</li>
+						<li>BBB :</li>
+						<li>BB :</li>
+						<li>CCC</li>
+						<li>NR</li>
+					</ul>
+				</div>
+				
+
+		        <img class ="scale"src="images/scale_v2.png" alt="Scale"></img>
+		        <div class="nr"><p>Not rated</p></div>      
+			      	<!-- <div class="tSwitch"></div> -->
+			</div>		
+	</div>
+
+
+	<div class="sidePanel">
+		<div class="score"></div>
+		<h4>3D View</h4>
+
+	<a class = "slide"href="" title="">
+	</a>
+	</div>
+	<div id="threeContainer">
+				<div id="CountryIdentifier">
+			<img id = "CountrySprite"src="images/blank.gif"/>
+		<p id="counName">Blank Pick</p>
+		</div>
+
+	<div id="three">
+
+		<p>Click &amp; hold to rotate.</p>
+		<p class="infoToClick">Double Click on a Country <b>Once</b>  <br> To Activate 3D</p>
+
+	</div>
+	</div>
+
+
+	
+</body>
+</html>

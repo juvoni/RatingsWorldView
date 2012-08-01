@@ -1,0 +1,1048 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bb",
+				"border-bottom"
+			],
+			[
+				"l",
+				":last-child"
+			],
+			[
+				"bt",
+				"border-top-color"
+			],
+			[
+				"bot",
+				"border-top"
+			],
+			[
+				"gdpP",
+				"gdpPerChange"
+			],
+			[
+				"gdpPer",
+				"gdpPerChg"
+			],
+			[
+				"gdph",
+				"gdpPerChg"
+			],
+			[
+				"vi",
+				"visibility"
+			],
+			[
+				"color",
+				"colorIndiPerCent"
+			],
+			[
+				"col",
+				"colorIndiGdp"
+			],
+			[
+				"ui",
+				"uiVal"
+			],
+			[
+				"gdp",
+				"gdpChg"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"star",
+				"startDate"
+			],
+			[
+				"yea",
+				"yearCountMax"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"current",
+				"currentCon"
+			],
+			[
+				"rt",
+				"rtgActSection"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"slide",
+				"slideState"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"getd",
+				"getDebtOfYear"
+			],
+			[
+				"get",
+				"getYear"
+			],
+			[
+				"Gd",
+				"GdpPer"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"thr",
+				"threeD"
+			],
+			[
+				"three",
+				"threeD"
+			],
+			[
+				"cur",
+				"current"
+			],
+			[
+				"firs",
+				"firstClick"
+			],
+			[
+				"goo",
+				"goodBrowser"
+			],
+			[
+				"thre",
+				"threeD"
+			],
+			[
+				"sco",
+				"scoreVal"
+			],
+			[
+				"getS",
+				"getScores"
+			],
+			[
+				"mon",
+				"monetary"
+			],
+			[
+				"rati",
+				"ratingScore"
+			],
+			[
+				"rat",
+				"ratingScore"
+			],
+			[
+				"rando",
+				"randObText"
+			],
+			[
+				"scoreT",
+				"scoreTextObject"
+			],
+			[
+				"ran",
+				"randOb"
+			],
+			[
+				"rand",
+				"randOb"
+			],
+			[
+				"ec",
+				"economic"
+			],
+			[
+				"ex",
+				"external"
+			],
+			[
+				"po",
+				"political"
+			],
+			[
+				"Ex",
+				"External"
+			],
+			[
+				"b",
+				"block	(b)"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"mg",
+				"margin"
+			],
+			[
+				"name",
+				"nameOfCon"
+			],
+			[
+				"new",
+				"newClass"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"lin",
+				"line"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"spa",
+				"sparkline"
+			],
+			[
+				"coun",
+				"countrylimit"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"r",
+				"relative	(r)"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"txt",
+				"text-align"
+			],
+			[
+				"perc",
+				"percent"
+			],
+			[
+				"perN",
+				"perNew"
+			],
+			[
+				"Up",
+				"Upgrade"
+			],
+			[
+				"A",
+				"Affirmation"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"Co",
+				"ConfB"
+			],
+			[
+				"Ne",
+				"NewB"
+			],
+			[
+				"Dow",
+				"DowB"
+			],
+			[
+				"Af",
+				"AffB"
+			],
+			[
+				"numOfN",
+				"numOfNewFromNr"
+			],
+			[
+				"num",
+				"numOfNewFromConfid"
+			],
+			[
+				"numOf",
+				"numOfAff"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"s",
+				"static	(s)"
+			],
+			[
+				"numOfNewF",
+				"numOfNewFromConfid"
+			],
+			[
+				"typ",
+				"typeOfAction"
+			],
+			[
+				"rtg",
+				"rtgAction"
+			],
+			[
+				"asO",
+				"asOfYear"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"has",
+				"hasYear"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"cou",
+				"countryName"
+			],
+			[
+				"geo",
+				"geoThin"
+			],
+			[
+				"up",
+				"updateScore"
+			],
+			[
+				"inc",
+				"incSize"
+			],
+			[
+				"scoreV",
+				"scoreVal"
+			],
+			[
+				"0x",
+				"0xCCCC00"
+			],
+			[
+				"textO",
+				"textObject"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"rende",
+				"renderMap"
+			],
+			[
+				"ge",
+				"geoThin"
+			],
+			[
+				"par",
+				"parent"
+			],
+			[
+				"sc",
+				"scene"
+			],
+			[
+				"slid",
+				"slide"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"control",
+				"controlArea"
+			],
+			[
+				"F",
+				"FFFFFF"
+			],
+			[
+				"map",
+				"mapBColor"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"switch",
+				"switchT"
+			],
+			[
+				"swit",
+				"switchT"
+			],
+			[
+				"swi",
+				"switchT"
+			],
+			[
+				"toggle",
+				".toggle	.toggle"
+			],
+			[
+				"h",
+				":hover"
+			],
+			[
+				"geot",
+				"geoThin3"
+			],
+			[
+				"TH",
+				"THREE"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"with",
+				"width"
+			],
+			[
+				"rep",
+				"repeat"
+			],
+			[
+				"c",
+				"center	(c)"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ma",
+				"material"
+			],
+			[
+				"pl",
+				"padding-left"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"geom",
+				"geometry"
+			],
+			[
+				"Col",
+				"COLOR"
+			],
+			[
+				"V",
+				"VIEW_ANGLE"
+			],
+			[
+				"H",
+				"HEIGHT"
+			],
+			[
+				"W",
+				"WIDTH"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"ff",
+				"FFFFFF"
+			],
+			[
+				"scal",
+				"scaleInfo"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"styl",
+				"list-style"
+			],
+			[
+				"wi",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ja",
+				"Set Syntax: Java"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"syb",
+				"Set Syntax: LaTeX Beamer"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML5"
+			],
+			[
+				"mov",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"toggl",
+				"Trailing Spaces: Toggle Trailing Spaces"
+			],
+			[
+				"toggle ",
+				"Trailing Spaces: Toggle Trailing Spaces"
+			],
+			[
+				"toggle",
+				"WordHighlight: Toggle Enabled"
+			],
+			[
+				"togg",
+				"Trailing Spaces: Toggle Trailing Spaces"
+			],
+			[
+				"spa",
+				"Trailing Spaces: Toggle Trailing Spaces"
+			],
+			[
+				"ci",
+				"SublimeCodeIntel: Disable Live Autocompletion for Current Language"
+			],
+			[
+				"intel",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"set ja",
+				"Set Syntax: Java"
+			],
+			[
+				"space",
+				"Trailing Spaces: Toggle Trailing Spaces"
+			],
+			[
+				"inte",
+				"SublimeCodeIntel: Enable Plugin"
+			],
+			[
+				"lan",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"tr",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML5"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"int",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 514.0
+	},
+	"console":
+	{
+		"height": 197.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/mySite/index.php",
+		"/C/Users/JB/.gitconfig",
+		"/C/Users/JB/.ssh/id_rsa",
+		"/C/apache-tomcat-7.0.29/webapps/SP/ajax/World_Data_GDP.json",
+		"/C/apache-tomcat-7.0.29/webapps/SP/ajax/World_Data_GDP_Per_Gov_Debt.json",
+		"/C/apache-tomcat-7.0.29/webapps/SP/ajax/Data.json",
+		"/C/apache-tomcat-7.0.29/webapps/SP/debug.html",
+		"/C/Users/JB/AppData/Roaming/Sublime Text 2/Packages/S&P.sublime-project",
+		"/C/wamp/www/S&P/debug.html",
+		"/C/wamp/www/S&P/ajax/World_Data_GDP.JSON",
+		"/C/wamp/www/S&P/js/Country.js",
+		"/C/wamp/www/S&P/css/style.css",
+		"/C/apache-tomcat-7.0.29/webapps/SP/ajax/index.html",
+		"/C/wamp/www/S&P/index.html",
+		"/C/wamp/www/S&P/js/jvmSlider.js",
+		"/C/apache-tomcat-7.0.29/webapps/SP/js/jvmSlider.js",
+		"/C/wamp/www/S&P/ajax/World_Data_GDP_Per_Gov_Debt.JSON",
+		"/C/Users/JB/Dropbox/Processing/Sov_Pde/Sov_Pde.pde",
+		"/C/Users/JB/Documents/Processing/sketch_may24a/application.windows/source/sketch_may24a.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_Pde/data/debtPeriod.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_Pde/DataImport.pde",
+		"/C/Users/JB/Dropbox/Processing/Sov_Pde/Debt.pde",
+		"/C/Users/JB/Dropbox/Processing/Sov/DataImport.java",
+		"/C/Users/JB/Dropbox/Processing/Sov/Sov.java",
+		"/C/Users/JB/Dropbox/Processing/Sov/data/debtPeriod.java",
+		"/C/Users/JB/Dropbox/Processing/Sov/Debt.java",
+		"/C/Users/JB/Dropbox/Processing/Sov/Country.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main - Copy/Sov_history_main.pde",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main - Copy/RatingScale.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main - Copy/Debt.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main - Copy/DataImport.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main - Copy/data/debtPeriod.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_backup/data/bad_teeth.tsv",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_backup/data/debtPeriod.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_backup/Country.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_backup/DataImport.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_backup/Debt.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_backup/RatingScale.java",
+		"/C/wamp/www/S&P/css/flags.css",
+		"/C/Users/JB/Downloads/TurnWheel-jReject-1.0.1-2-g01c9109/TurnWheel-jReject-01c9109/css/jquery.reject.css",
+		"/C/Users/JB/Downloads/excanvas_r3/README",
+		"/C/wamp/www/S&P/js/jquery.peity.min.js",
+		"/C/wamp/www/S&P/score.html",
+		"/C/wamp/www/three.js/examples/webgl_custom_attributes.html",
+		"/C/wamp/www/three.js/examples/canvas_geometry_cube.html",
+		"/C/wamp/www/three.js/examples/canvas_geometry_text.html",
+		"/C/Users/JB/Documents/blpapi_java_3.4.8.1/examples/com/bloomberglp/blpapi/examples/ContributionsMktdataExample.java",
+		"/C/Users/JB/Documents/blpapi_java_3.4.8.1/examples/com/bloomberglp/blpapi/examples/UserModeExample.java",
+		"/C/wamp/www/three.js/examples/canvas_geometry_hierarchy.html",
+		"/C/wamp/www/S&P/js/selectToUISlider.jQuery.js",
+		"/C/wamp/www/S&P/js/jquery-jvectormap.js",
+		"/C/wamp/www/boilerplate/index.html",
+		"/C/wamp/www/boilerplate/css/main.css",
+		"/C/wamp/www/Sov_cube/css/style.css",
+		"/C/wamp/www/Sov_cube/js/jvmSlider.js",
+		"/C/wamp/www/Sov_cube/sov.html",
+		"/C/wamp/www/Sov_cube/index.html",
+		"/C/wamp/www/Sov_cube/js/dynamicSlider.js",
+		"/C/wamp/www/Sov_cube/js/Country.js",
+		"/C/wamp/www/Sov_cube/js/selectToUISlider.jQuery.js",
+		"/C/wamp/www/Sov_cube/Data.JSON",
+		"/C/wamp/www/Sov_cube/sov.thml",
+		"/C/wamp/www/Sov_cube/js/jquery-jvectormap.js",
+		"/C/wamp/www/Sov_cube/js/ jquery-ui-1.8.15.custom.min.js",
+		"/C/Users/JB/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/wamp/www/Sov_cube/Normalized_data.csv",
+		"/C/wamp/www/Sov_cube/js/jquery-jvectormap-world-en.js",
+		"/C/wamp/www/Sov_cube/jquery-jvectormap-world-en.js",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main/Debt.java",
+		"/C/Users/JB/Dropbox/Js/Sov_cube/Renderer.html",
+		"/C/Users/JB/Dropbox/Js/Sov_cube/js/Three.js",
+		"/C/Users/JB/AppData/Roaming/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/JB/Dropbox/Js/Sov_cube/index.html",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main/RatingScale.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main/Country.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main/Sov_history_main.pde",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main/Sov.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main/DataImport.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history_main/Sov_history.pde",
+		"/C/Users/JB/Dropbox/Processing/Sov_history/Bad_teeth.pde",
+		"/C/Users/JB/Dropbox/Processing/Sov_history/RatingScale.java",
+		"/C/Users/JB/Dropbox/Processing/Sov_history/test.java",
+		"/C/Users/JB/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/C/Users/JB/Dropbox/Processing/ArticulatingArm/ArticulatingArm.pde",
+		"/C/Users/JB/processing-read-only/core/build.xml",
+		"/C/Users/JB/processing-read-only/java/cmd/dist.sh",
+		"/C/Users/JB/AppData/Roaming/Sublime Text 2/Packages/User/Processing.sublime-build",
+		"/C/Users/JB/processing-read-only/build/windows/export/Makefile",
+		"/C/Users/JB/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/JB/Dropbox/Processing/unfolding/unfolding/examples/de/fhpotsdam/unfolding/examples/ComplexMapEventApp.java",
+		"/C/Users/JB/Documents/processing-1.5.1/modes/java/libraries/controlP5/src/controlP5/ControlWindow.java",
+		"/C/Users/JB/Dropbox/Classes/Object Oriented Programming/RandomWalk/cell.java",
+		"/C/Users/JB/Dropbox/Classes/Object Oriented Programming/SimpleGui1B/loop.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/Person.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/Gui.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/RadioButtonQ.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/Query.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/Enrollement.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/Blackboard.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/RadioButtonQ.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/Person.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/Student.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/Query.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/StaticTable.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/Blackboard.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/Enrollement.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/Gui.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W-O_GUI]/Enrollement.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/Student.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/QueryToTable.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/QueryTable.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/GenericTableModelTest.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/PermissionsTableModel.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/GenericTableModel.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/Permission.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/test.java",
+		"/C/Users/JB/Dropbox/Java/Table_Test/KeyValuePair.java",
+		"/C/Users/JB/Documents/GUI Tutorial/Code/Part 2/2_Event Button/EventButton.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/miscellaneous/BoxLayoutDemo.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/students.txt",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/RadioButton.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student_Query[W_GUI]/BoxLayoutDemo.java",
+		"/C/Users/JB/Dropbox/Java/miscellaneous/LabelDemo.java",
+		"/C/Users/JB/Dropbox/Java/miscellaneous/LabDemo.java",
+		"/C/Users/JB/Dropbox/Java/miscellaneous/Result.txt",
+		"/C/Users/JB/Dropbox/Java/Final Project/Person.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/Student.java",
+		"/C/Users/JB/Dropbox/Java/Final Project/StudentsInfo.txt"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"egy",
+			"\"Name\": \"Egyp",
+			"{ disableTooltips: true }",
+			"disableInteraction",
+			"enableTagOptions: false",
+			"$('.line').",
+			"$('.line')",
+			"$gdp",
+			"gdpdata",
+			"red",
+			"green",
+			"red",
+			"font-family: Rockwell, \"Courier Bold\", Courier, Georgia, Times, \"Times New Roman\", serif;",
+			"font-family: Impact, Haettenschweiler, \"Franklin Gothic Bold\", Charcoal, \"Helvetica Inserat\", \"Bitstream Vera Sans Bold\", \"Arial Black\", sans serif;",
+			" font-family: Verdana, Geneva, sans-serif;",
+			"font-weight: 650;",
+			"font-family: Futura, \"Trebuchet MS\", Arial, sans-serif;",
+			"title",
+			"bottom",
+			"ul.ticker ",
+			"$gdpChange",
+			"gdpChange",
+			"span",
+			"div",
+			"#1af029",
+			"backgroundPosition",
+			"colorIndication();",
+			"Change:",
+			"currentCon.getDebtOfYear(id)",
+			"currentCon.getDebtOfYear()",
+			"gdph",
+			"initScore",
+			"yearCountMax",
+			"2011",
+			"gdpLine",
+			"rep",
+			"egy",
+			"korea",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",\n		\"1982\": \"\",\n		\"1983\": \"\",\n		\"1984\": \"\",\n		\"1985\": \"\",\n		\"1986\": \"\",\n		\"1987\": \"\",\n		\"1988\": \"\",\n		\"1989\": \"\",",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",\n		\"1982\": \"\",\n		\"1983\": \"\",\n		\"1984\": \"\",\n		\"1985\": \"\",\n		\"1986\": \"\",\n		\"1987\": \"\",\n		\"1988\": \"\",\n		\"1989\": \"\",\n		\"1990\": \"\",\n		\"1991\": \"\",\n		\"1992\": \"\",\n		\"1993\": \"\",\n		\"1994\": \"\",\n		\"1995\": \"\",\n		\"1996\": \"\",\n		\"1997\": \"\",\n		\"1998\": \"\",",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",\n		\"1982\": \"\",\n		\"1983\": \"\",\n		\"1984\": \"\",\n		\"1985\": \"\",\n		\"1986\": \"\",\n		\"1987\": \"\",\n		\"1988\": \"\",\n		\"1989\": \"\",\n		\"1990\": \"\",\n		\"1991\": \"\",\n		\"1992\": \"\",\n		\"1993\": \"\",\n		\"1994\": \"\",\n		\"1995\": \"\",\n		\"1996\": \"\",\n		\"1997\": \"\",\n		\"1998\": \"\",\n		\"1999\": \"31.01325165\",",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",\n		\"1982\": \"\",\n		\"1983\": \"\",\n		\"1984\": \"\",\n		\"1985\": \"\",\n		\"1986\": \"\",\n		\"1987\": \"\",\n		\"1988\": \"\",\n		\"1989\": \"\",\n		\"1990\": \"\",\n		\"1991\": \"\",\n		\"1992\": \"\",",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",\n		\"1982\": \"\",\n		\"1983\": \"\",\n		\"1984\": \"\",\n		\"1985\": \"\",\n		\"1986\": \"\",\n		\"1987\": \"\",\n		\"1988\": \"\",\n		\"1989\": \"\",\n		\"1990\": \"54.55465238\",\n		\"1991\": \"48.72877999\",\n		\"1992\": \"47.86190907\",\n		\"1993\": \"40.71215143\",\n		\"1994\": \"35.22431765\",\n		\"1995\": \"28.65726379\",\n		\"1996\": \"38.16371868\",\n		\"1997\": \"32.81200781\",\n		\"1998\": \"31.75895345\",\n		\"1999\": \"36.32756042\",",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",\n		\"1982\": \"\",\n		\"1983\": \"\",\n		\"1984\": \"\",\n		\"1985\": \"\",\n		\"1986\": \"\",\n		\"1987\": \"\",\n		\"1988\": \"\",\n		\"1989\": \"\",\n		\"1990\": \"8.727364185\",\n		\"1991\": \"16.37955898\",\n		\"1992\": \"21.29982087\",\n		\"1993\": \"19.34741504\",\n		\"1994\": \"17.88000327\",\n		\"1995\": \"16.98645134\",\n		\"1996\": \"15.8131027\",\n		\"1997\": \"16.9605824\",\n		\"1998\": \"21.1646808\",\n		\"1999\": \"23.69150523\"",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",",
+			"\"1960\": \"\",\n		\"1961\": \"\",\n		\"1962\": \"\",\n		\"1963\": \"\",\n		\"1964\": \"\",\n		\"1965\": \"\",\n		\"1966\": \"\",\n		\"1967\": \"\",\n		\"1968\": \"\",\n		\"1969\": \"\",\n		\"1970\": \"\",\n		\"1971\": \"\",\n		\"1972\": \"\",\n		\"1973\": \"\",\n		\"1974\": \"\",\n		\"1975\": \"\",\n		\"1976\": \"\",\n		\"1977\": \"\",\n		\"1978\": \"\",\n		\"1979\": \"\",\n		\"1980\": \"\",\n		\"1981\": \"\",\n		\"1982\": \"\",\n		\"1983\": \"\",\n		\"1984\": \"\",\n		\"1985\": \"\",\n		\"1986\": \"\",\n		\"1987\": \"\",\n		\"1988\": \"\",\n		\"1989\": \"\",\n		\"1990\": \"\",\n		\"1991\": \"\",\n		\"1992\": \"\",\n		\"1993\": \"\",\n		\"1994\": \"\",\n		\"1995\": \"\",\n		\"1996\": \"\",\n		\"1997\": \"\",\n		\"1998\": \"\",\n		\"1999\": \"\",",
+			"line",
+			"import",
+			"scoreVal",
+			"curenntTxt",
+			"Txt[]",
+			"Ob[]",
+			"a",
+			"scoreValN",
+			"getScores",
+			"currentOb",
+			"goodBrowser",
+			"tester",
+			"threeD",
+			"getCo",
+			"scoreVal",
+			"randN",
+			"randN[fiveD]",
+			"[fiveD]",
+			"randN",
+			"[7]",
+			"[6]",
+			"[5]",
+			"[2]",
+			"sci",
+			"6",
+			"scoreTextObject",
+			"sct",
+			"scT",
+			"sct",
+			"geoThin",
+			"fiveD",
+			"dC",
+			"scoreVal[",
+			"random",
+			"poli",
+			"econ",
+			"political",
+			"poli",
+			"political",
+			"poli",
+			"political",
+			"poli",
+			"political",
+			"'New from Confid:",
+			"'New from NR:",
+			"'Affirmations:",
+			"'New Rating:",
+			"'Downgrade:",
+			"'Upgrade:",
+			"z-index",
+			"			// $('.rtgActSection').html('<ul class = \"ticker\">'+\n			//	 '<li>'+'Upgrade: &nbsp; '+mapRatingAction[startDate]['New']+'<span class = \"percent\">'+'--'+'</span>'+' &nbsp<span class=\"line\">'+UpB[0]+','+UpB[1]+','+UpB[2]+','+UpB[3]+','\n			//	 + UpB[4]+','+UpB[5]+','+UpB[6]+','+UpB[7]+','+UpB[8]+','+UpB[9]+','+UpB[10]+','+UpB[11]+'</span>'+'</li>'+\n			//	'<li>'+'Downgrade: &nbsp; '+mapRatingAction[startDate]['Affirmation']+'<span class = \"percent\">'+'--'+'</span>'+' &nbsp<span class=\"line\">'+DowB[0]+','+DowB[1]+','+DowB[2]+','+DowB[3]+','\n			//	 + DowB[4]+','+DowB[5]+','+DowB[6]+','+DowB[7]+','+DowB[8]+','+DowB[9]+','+DowB[10]+','+DowB[11]+'</span>'+'</li>'+\n			//	'<li>'+'New Rating: &nbsp; '+mapRatingAction[startDate]['Upgrade']+'<span class = \"percent\">'+'--'+'</span>'+' &nbsp<span class=\"line\">'+NewB[0]+','+NewB[1]+','+NewB[2]+','+NewB[3]+','\n			//	 + NewB[4]+','+NewB[5]+','+NewB[6]+','+NewB[7]+','+NewB[8]+','+NewB[9]+','+NewB[10]+','+NewB[11]+'</span>'+'</li>'+\n			//	'<li>'+'Affirmations: &nbsp; '+mapRatingAction[startDate]['Downgrade']+'<span class = \"percent\">'+'--'+'</span>'+' &nbsp<span class=\"line\">'+AffB[0]+','+AffB[1]+','+AffB[2]+','+AffB[3]+','\n			//	 + AffB[4]+','+AffB[5]+','+AffB[6]+','+AffB[7]+','+AffB[8]+','+AffB[9]+','+AffB[10]+','+AffB[11]+'</span>'+'</li>'+\n			//	'<li>'+'New from NR: &nbsp; '+mapRatingAction[startDate]['New from NR']+'<span class = \"percent\">'+'--'+'</span>'+' &nbsp<span class=\"line\">'+NrB[0]+','+NrB[1]+','+NrB[2]+','+NrB[3]+','\n			//	 + NrB[4]+','+NrB[5]+','+NrB[6]+','+NrB[7]+','+NrB[8]+','+NrB[9]+','+NrB[10]+','+NrB[11]+'</span>'+'</li>'+\n			//	'<li>'+'New from Confid: &nbsp; '+mapRatingAction[startDate]['New from Confid']+'<span class = \"percent\">'+'--'+'</span>'+' &nbsp<span class=\"line\">'+ConfB[0]+','+ConfB[1]+','+ConfB[2]+','+ConfB[3]+','\n			//	 + ConfB[4]+','+ConfB[5]+','+ConfB[6]+','+ConfB[7]+','+ConfB[8]+','+ConfB[9]+','+ConfB[10]+','+ConfB[11]+'</span>'+'</li>'+\n			//	'</ul>');",
+			"Math.floor(",
+			"100)",
+			"Math.floor(",
+			")",
+			"$(\"span.line\").peity(\"line\");",
+			"sparkline",
+			"<span class=\"dynamicsparkline_up\"",
+			"<span class=\"dynamicsparkline\">",
+			"span",
+			"<span class=\"dynamicsparkline\">Loading..</span>",
+			"' &nbsp<span class=\"line\">'+UpB[0]+','+UpB[1]+','+UpB[2]+','+UpB[3]+','\n				 + UpB[4]+','+UpB[5]+','+UpB[6]+','+UpB[7]+','+UpB[8]+','+UpB[9]+','+UpB[10]+','+UpB[11]+'</span>'",
+			"New",
+			"percent",
+			"'&nbsp; ",
+			"2",
+			"'&#37;'+",
+			"4",
+			"'&#37;'+",
+			"'&#37;'",
+			"+1",
+			"(startDate)+ui.value-1",
+			"ui.value+(startDate)",
+			"%",
+			"Affirmation",
+			"New",
+			"percent",
+			"startDate",
+			"UpB",
+			"AffB",
+			"NewB",
+			"ui.value+(startDate)"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 92.0
+	},
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+	<title>Random Scoring</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src = "js/Country.js"></script>
+
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+<script>
+$(function() {
+	var Cl = [];
+	var debtObj = []; 
+	var countrylimit = [];
+
+	var jsonObj = {};
+	var mapValues = {};
+	var mapLabels = {};
+
+	$.getJSON('ajax/Data.json', function(data) {
+		
+		var i = 0;
+		var n = 0;
+		  $.each(data, function(){
+				debtObj.push(new Debt(this['Rating'], new Date(this['Release Date']), this['Rtg Action'], this['Rtg Symbol Sort']));
+				
+				if(countrylimit.indexOf(this['Name']) === -1 ){
+					Cl[n]= new Country(this['Org ID'], this['Org Legal Name'], this['Name'], this['Org Region'], debtObj[i]);
+					Cl[n].longitude(this['longitude']);
+					Cl[n].latitude(this['latitude']);
+					Cl[n].countryCode(this['ISO Two Char Country Code']);
+					n++;
+				}
+				else{
+					for(var x = 0; x<Cl.length;x++){
+					 	if(Cl[x].countryName() === this['Name']){
+					 		Cl[x].debtB(debtObj[i]);
+					 		//document.write("debt was added...<br>");
+					 		break;
+					 	}
+					}	
+				}
+				i++;
+				countrylimit.push(this['Name']);
+
+	    });
+		  
+	//--
+	 var cid = 60;
+
+	document.write("Number of Debts:"+debtObj.length);
+	document.write("<br/> Number of Countries :"+Cl.length);
+	document.write("<br>Size of "+Cl[cid].countryName()+" debt:"+ Cl[cid].debtB().length+"<br>");
+
+	// for(var i = 0; i<Cl[cid].debtB().length; i++){
+	//	document.write("Country Name:"+ Cl[cid].countryName()+"  Year:"+ Cl[cid].getYearAtIndex(i)+"<br>" );	
+	// }
+
+	 var year = 2003;
+
+	// document.write("<br> Debt Year "+ year+ " Located => "+ Cl[cid].debtYear(year));
+	//			//var yearOf = '2005';
+	//			var yearIndex = Cl[cid].debtYear(year); 
+	//			var yInt = parseInt(yearIndex,10);
+	// document.write("<br> Rating for that year: "+ Cl[cid].getDebt(5).rating() + "  Rating number: "+ Cl[cid].getDebt(yInt).rtgSymbol() );
+
+
+				//document.write("<br>"+JSON.stringify(jsonObj));
+				//document.write("Test:"+Cl[1].getDebt(Cl[1].debtYear(year)).rtgSymbol());
+
+			// for(var o = 0; o<Cl.length;o++){
+			//	var CC = Cl[o].countryCode();
+			//	var yT = Cl[o].debtYear(year);
+			//	var yTint = parseInt(yT,10);
+			//	RS = parseInt(Cl[o].getDebt(7).rtgSymbol(),10);
+			//	jsonObj[CC] = RS;
+			//	//col[CC] = RS;		
+			// }
+
+
+			var yearCountMin = 2000; 
+			var yearCountMax = 2011;
+			//document.write("<br> Debt:"+ Cl[cid].getDebt(1).rating());
+			document.write("<br> Country: "+Cl[cid].countryName() +" : "+ Cl[cid].countryCode()+"<br>  Rating for year of: "+year+ "  => "+Cl[cid].getDebtOfYear(year).rating());
+
+			//document.write("<br> Has year? "+Cl[1].debtB().hasYear("2001"));
+			for(var cYear = yearCountMin; cYear<=yearCountMax; cYear++){
+				mapValues[cYear] = {};
+				mapLabels[cYear] = {};
+				for(var s = 0; s<Cl.length;s++){
+					var CC = Cl[s].countryCode();
+					var RS;
+					var rate;
+					if (typeof Cl[s].getDebtOfYear(cYear) != 'undefined'){
+						RS = Cl[s].getDebtOfYear(cYear).rtgSymbol();
+						rate = Cl[s].getDebtOfYear(cYear).rating();
+						
+						mapValues[cYear][CC] = RS;
+						
+						mapLabels[cYear][CC] = Cl[s].countryName().concat(": ",rate);
+					}
+				}
+					
+			}
+			//document.write("<br>"+JSON.stringify(mapValues));
+
+
+});
+});
+
+</script>
+
+
+
+</body>
+</html>

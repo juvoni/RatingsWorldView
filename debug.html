@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+	<title>Test</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src = "js/Country.js"></script>
+	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+<script>
+$(function() {
+	var Cl = [];
+	var debtObj = []; 
+	var countrylimit = [];
+
+	var jsonObj = {};
+	var mapValues = {};
+	var mapLabels = {};
+	var mapRatingAction = {};
+	
+
+	var numOfAff = 0,
+		numOfDown = 0,
+		numOfUp = 0,
+		numOfNew = 0,
+		numOfNewFromConfid = 0,
+		numOfNewFromNr = 0;
+
+			AffB = [],
+		DowB = [],
+		UpB = [],
+		NewB = [],
+		ConfB = [],
+		NrB = [];
+
+
+	$.getJSON('ajax/Data.json', function(data) {
+			 var cid = 71;
+			 var year = 2000;
+			 var countryToFind = 'US';
+		
+		var i = 0;
+		var n = 0;
+		  $.each(data, function(){
+				debtObj.push(new Debt(this['Rating'], new Date(this['Release Date']), this['Rtg Action'], this['Rtg Symbol Sort'], new Date(this['As of Year'])));
+				
+				if(countrylimit.indexOf(this['Name']) === -1 ){
+					Cl.push(new Country(this['Org ID'], this['Org Legal Name'], this['Name'], this['Org Region'], debtObj[i]));
+					Cl[n].longitude(this['longitude']);
+					Cl[n].latitude(this['latitude']);
+					Cl[n].countryCode(this['ISO Two Char Country Code']);
+					n++;
+				}
+				else{
+					for(var x = 0; x<Cl.length;x++){
+					 	if(Cl[x].countryName() === this['Name']){
+					 		Cl[x].debtB(debtObj[i]);
+					 		//document.write("debt was added...<br>");
+					 		break;
+					 	}
+					}	
+				}
+				i++;
+				countrylimit.push(this['Name']);
+
+	    });
+		  
+	//--
+
+
+	document.write("Number of Debts:"+debtObj.length);
+	document.write("<br/> Number of Countries :"+Cl.length);
+	document.write("<br>Size of "+Cl[cid].countryName()+" debt:"+ Cl[cid].debtB().length+"<br>");
+
+	// for(var i = 0; i<Cl[cid].debtB().length; i++){
+	//	document.write("Country Name:"+ Cl[cid].countryName()+"  Year:"+ Cl[cid].getYearAtIndex(i)+"<br>" );	
+	// }
+
+
+
+	// document.write("<br> Debt Year "+ year+ " Located => "+ Cl[cid].debtYear(year));
+	//			//var yearOf = '2005';
+	//			var yearIndex = Cl[cid].debtYear(year); 
+	//			var yInt = parseInt(yearIndex,10);
+	// document.write("<br> Rating for that year: "+ Cl[cid].getDebt(5).rating() + "  Rating number: "+ Cl[cid].getDebt(yInt).rtgSymbol() );
+
+
+				//document.write("<br>"+JSON.stringify(jsonObj));
+				//document.write("Test:"+Cl[1].getDebt(Cl[1].debtYear(year)).rtgSymbol());
+
+			// for(var o = 0; o<Cl.length;o++){
+			//	var CC = Cl[o].countryCode();
+			//	var yT = Cl[o].debtYear(year);
+			//	var yTint = parseInt(yT,10);
+			//	RS = parseInt(Cl[o].getDebt(7).rtgSymbol(),10);
+			//	jsonObj[CC] = RS;
+			//	//col[CC] = RS;		
+			// }
+
+			var numOfEmpty = 0;
+			var yearCountMin = '2000'; 
+			var yearCountMax = '2011';
+			//document.write("<br> Debt:"+ Cl[cid].getDebt(1).rating());
+			document.write("<br> Country: "+Cl[cid].countryName() +" : "+ Cl[cid].countryCode()+"<br>  Rating for year of: "+year+ "  => "+Cl[cid].getDebtOfYear(year).rating());
+
+			var getThisCountry = function(conName){
+				var c = conName.toUpperCase();
+				var search = false;
+				for(var conSelect = 0; conSelect<Cl.length; conSelect++){
+					if(Cl[conSelect].countryCode() !== 'undefined'){
+						if(Cl[conSelect].countryCode() === c){
+							document.write("<br>Found:"+Cl[conSelect].countryName());
+							search = true;
+							break;
+						}
+					}
+
+				}
+				if(!search) document.write("<br>Not Found...");	
+			};
+
+			var getThisCountryIndex = function(conNamef){
+				var c = conNamef.toUpperCase();
+				var r;
+				for(var conSelect = 0; conSelect<Cl.length; conSelect++){
+					if(Cl[conSelect].countryCode() !== 'undefined'){
+						if(Cl[conSelect].countryCode() === c){
+							r = conSelect;
+							//document.write("<br>Found:"+Cl[conSelect].countryName());
+							break;
+						}
+					}
+				}
+				return r;
+			};
+	
+			for(var cYear = yearCountMin; cYear<=yearCountMax; cYear++){
+				mapValues[cYear] = {};
+				mapLabels[cYear] = {};
+				mapRatingAction[cYear] = {};
+
+				var typeOfAction;
+
+				numOfAff = 0,
+				numOfDown = 0,
+				numOfUp = 0,
+				numOfNew = 0,
+				numOfNewFromConfid = 0,
+				numOfNewFromNr = 0;
+			
+				for(var cIndex = 0; cIndex<Cl.length;cIndex++){
+					var CC = Cl[cIndex].countryCode();
+					var RS;
+					var rate;
+					var action;
+					if(Cl[cIndex].hasYear(cYear)){
+					//if (typeof Cl[cIndex].getDebtOfYear(cYear) !== 'undefined'){
+						action = Cl[cIndex].getDebtOfYear(cYear).rtgAction();
+						RS = Cl[cIndex].getDebtOfYear(cYear).rtgSymbol();
+						rate = Cl[cIndex].getDebtOfYear(cYear).rating();
+						mapValues[cYear][CC] = RS;
+						mapLabels[cYear][CC] = Cl[cIndex].countryName().concat(": ",rate);
+
+						switch (action){
+							case "New": numOfNew++;
+								break;
+							case "Affirmation": numOfAff++;
+								break;
+							case "Upgrade": numOfUp++;
+								break;
+							case "Downgrade": numOfDown++;
+								break;
+							case "New from NR": numOfNewFromNr++;
+								break;
+							case "New from Confid": numOfNewFromConfid++;
+								break;
+						}
+
+					}
+					else{
+							numOfEmpty++;
+							//document.write("<br>"+Cl[cIndex].countryName()+": "+ cYear);
+						}
+				}
+
+				for(var typeActCount = 0; typeActCount<=5; typeActCount++){
+					switch(typeActCount){
+						case 0: mapRatingAction[cYear]['New'] = numOfNew;
+								NewB.push(numOfNew);
+							break;
+						case 1: mapRatingAction[cYear]['Affirmation'] = numOfAff;
+								AffB.push(numOfNew);
+							break;
+						case 2: mapRatingAction[cYear]['Upgrade'] = numOfUp;
+								UpB.push(numOfUp);
+							break;
+						case 3: mapRatingAction[cYear]['Downgrade'] = numOfDown;
+								DowB.push(numOfDown);
+							break;
+						case 4: mapRatingAction[cYear]['New from NR'] = numOfNewFromNr;
+								NrB.push(numOfNewFromNr);
+							break;
+						case 5: mapRatingAction[cYear]['New from Confid'] = numOfNewFromConfid;
+								ConfB.push(numOfNewFromConfid);
+							break;
+					}
+				}
+
+	
+					
+			}
+			document.write("<br>Number of Missing Countries:"+numOfEmpty);
+
+			getThisCountry(countryToFind);
+			document.write("<br>"+Cl[getThisCountryIndex(countryToFind)].countryName()+ " is Located at index =>"+getThisCountryIndex(countryToFind)+"<br>");
+			//document.write("<br>"+JSON.stringify(mapValues));
+			document.write("<br> Number of new Ratings in "+year+" : "+mapRatingAction[year]['New']);
+			document.write("<br> Number of upgrades in "+year+" : "+mapRatingAction[year]['Upgrade']);
+			document.write("<br> Number of Affirmations in "+year+" : "+mapRatingAction[year]['Affirmation']);
+			document.write("<br> Number of New Ratings from NR in "+year+" : "+mapRatingAction[year]['New from NR']);
+			document.write("<br> Number of New Ratings from Confid in "+year+" : "+mapRatingAction[year]['New from Confid']);
+
+			document.write("<br> Length of Upgrade years: "+ UpB.length);
+
+			var scoreVal = [];
+			for(var de = 0; de<9; de++){
+				if(de >=1){
+					scoreVal[de]=+ (scoreVal[de-1]+0.5);	
+				}
+				else{
+					scoreVal[de]=+ 1.0;
+				}
+			}
+			//return Math.floor(Math.random() * (max - min + 1)) + min;
+			for(var e = 0; e<scoreVal.length; e++){
+				var randN = Math.floor(Math.random()*(8-0 +1)+0);
+				document.write('<br>'+e+'= '+scoreVal[e]+"  random number associated: " + scoreVal[randN]);
+			}
+			document.write('<br>'+"Length of Score Array"+scoreVal.length);
+
+
+
+});
+});
+
+</script>
+
+
+
+</body>
+</html>
