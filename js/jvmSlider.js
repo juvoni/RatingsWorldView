@@ -12,11 +12,11 @@
 	/*!
     * EDIT THIS PORTION PRIOR TO USING
     */
-$.fn.sparkline.defaults.common.lineColor = '#CC0033';
-$.fn.sparkline.defaults.common.fillColor = '#CCCCCC';
+
 
 $(window).load(function(){
-
+$.fn.sparkline.defaults.common.lineColor = '#CC0033';
+$.fn.sparkline.defaults.common.fillColor = '#CCCCCC';
 $.reject({  
         reject: {  
             all: false, // Microsoft Internet Explorer  
@@ -89,7 +89,7 @@ $.reject({
 	// jvmSlider Options
 	startDate = 2000; // Default startDate set to 2000
 	endDate = 2011;
-	slideSpeed = 950; // Default slideSpeed set to 750ms
+	slideSpeed = 1250; // Default slideSpeed set to 750ms
 	selectedYear = startDate;
 	currentCon = '';
 	
@@ -444,9 +444,6 @@ $.reject({
 						}
 						genGdpHist();
 						$rtgSect.html(ticketInit(ui.value+(startDate),'slide'));
-						if(currentCon !== ''){
-							colorIndiGdp();
-						};
 
 						colorIndiPerCent();
 						$('.line').sparkline();															
