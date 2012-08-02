@@ -444,7 +444,10 @@ $.reject({
 						}
 						genGdpHist();
 						$rtgSect.html(ticketInit(ui.value+(startDate),'slide'));
-						colorIndiGdp();
+						if(currentCon !== ''){
+							colorIndiGdp();
+						};
+
 						colorIndiPerCent();
 						$('.line').sparkline();															
 						$map.vectorMap('set', 'values', mapValues[(ui.value+(startDate))]);
