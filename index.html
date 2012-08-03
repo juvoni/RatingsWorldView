@@ -186,7 +186,7 @@ var threeD;
 			</div>		
 	</div>
 
-
+	<canvas id="myRadar" width="300" height="300">[No canvas support]</canvas>
 	<div class="sidePanel">
 		<div class="score"></div>
 		<h4>3D View</h4>
@@ -205,17 +205,19 @@ var threeD;
 		<div class = "ViewSwap">
 
 			<div class="view-group" data-toggle="buttons-radio">
-			  <button class="btn btn-danger active btn-left">3D View</button>
-			  <button class="btn btn-danger btn-right">2D View</button>
+			  <button class="btn btn-danger active">3D View</button>
+			  <button class="btn btn-danger ">2D View</button>
 			</div>
 		</div> 
 			<p>Click &amp; hold to rotate.</p>
-		
-
+			<div id="three2D"></div>
+			<div id="threeRender3D"></div>
 		<p class="infoToClick">Double Click on a Country <b>Once</b>  <br> To Activate 3D</p>
 
+
 	</div>
 	</div>
+
 
 </body>
 </html>

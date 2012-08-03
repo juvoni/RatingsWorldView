@@ -16,7 +16,7 @@
 
 $(window).load(function(){
 $.fn.sparkline.defaults.common.lineColor = '#CC0033';
-$.fn.sparkline.defaults.common.fillColor = '#CCCCCC';
+$.fn.sparkline.defaults.common.fillColor = '#99ccff';
 
 $.reject({  
         reject: {  
@@ -656,7 +656,8 @@ $.reject({
 				$infoToClick.remove();
 				$Conid.show();
 				$Conid.css('width','90');
-				threeD = new threeSet();	
+				threeD = new threeSet();
+				twoDRadar();	
 			});
 		}
 };

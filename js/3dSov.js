@@ -1,4 +1,3 @@
-
 var threeSet = function(){
 	var scene;
 
@@ -68,7 +67,7 @@ var	mesh5;
 			}
 			renderer.setClearColorHex( COLOR, 1 );
 			renderer.setSize( WIDTH, HEIGHT );
-			document.getElementById('three').appendChild(renderer.domElement);
+			document.getElementById('threeRender3D').appendChild(renderer.domElement);
 
 			// // add Stats.js - https://github.com/mrdoob/stats.js
 			// stats = new Stats();
@@ -85,7 +84,7 @@ var	mesh5;
 			camera.position.set(2, 3, 8);
 			scene.add(camera);
 
-			var controlArea = document.getElementById('three');
+			var controlArea = document.getElementById('threeRender3D');
 
 			// create a camera contol
 			cameraControls	= new THREE.TrackballControls( camera, controlArea);
@@ -353,4 +352,17 @@ var	mesh5;
 		};
 
 
-}
+};
+
+var twoDRadar = function(){
+	        var radar2 = new RGraph.Radar('myRadar', [4,2,5,2,1.5]);
+            radar2.Set('chart.labels', ['Monetary', 'Political', 'Fiscal','External','Economic']);
+            radar2.Set('chart.tooltips', ['4', '2', '5','2','1.5']);
+            radar2.Set('chart.background.circles.poly', true);
+            radar2.Set('chart.background.circles.spacing', 30);
+            radar2.Set('chart.colors', ['rgba(255,0,0,0.50)']);
+            radar2.Set('chart.axes.color', 'transparent');
+            radar2.Set('chart.highlights', true);
+            radar2.Set('chart.strokestyle', ['#FFCC00']);
+            RGraph.Effects.Radar.Grow(radar2);
+};
