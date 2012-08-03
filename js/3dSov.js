@@ -295,20 +295,6 @@ var	mesh5;
 
 			// update camera controls
 			cameraControls.update();
-
-			// animate DirectionalLight
-			scene.lights.forEach(function(light, idx){
-				if( light instanceof THREE.DirectionalLight === false )	return;
-				var ang = 0.0005 * PIseconds * (idx % 2 ? 1 : -1);
-				light.position.set(Math.cos(ang), Math.sin(ang), Math.cos(ang*2)).normalize();							
-			});
-			// animate PointLights
-			
-			// scene.lights.forEach(function(light, idx){
-			//	if( light instanceof THREE.PointLight === false ) return;
-			//	var angle = 0.0005 * PIseconds * (idx % 2 ? 1 : -1) + idx * Math.PI/3;
-			//	light.position.set(Math.cos(angle)*3, Math.sin(angle*3)*2, Math.cos(angle*2)).normalize().multiplyScalar(2);
-			// });
 	
 		 	// actually render the scene
 		 	renderer.render( scene, camera );
