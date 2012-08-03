@@ -114,14 +114,14 @@ var	mesh5;
 			light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
 						.normalize().multiplyScalar(1.2);
 			scene.add( light );
-			var light	= new THREE.PointLight( Math.random() * 0xffffff );
-			light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
-						.normalize().multiplyScalar(1.2);
-			scene.add( light );
-			var light	= new THREE.PointLight( Math.random() * 0xffffff );
-			light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
-						.normalize().multiplyScalar(1.2);
-			scene.add( light );
+			// var light	= new THREE.PointLight( Math.random() * 0xffffff );
+			// light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
+			//			.normalize().multiplyScalar(1.2);
+			// scene.add( light );
+			// var light	= new THREE.PointLight( Math.random() * 0xffffff );
+			// light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
+			//			.normalize().multiplyScalar(1.2);
+			// scene.add( light );
 
 			var material 	= new THREE.MeshLambertMaterial({ambient: 0x6fcff3, color:0x66CCFF});//808080
 			             	
@@ -275,11 +275,7 @@ var	mesh5;
 			// loop on request animation loop
 			// - it has to be at the begining of the function
 			// - see details at http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
-			setTimeout( function() {
-
-				requestAnimationFrame( animate );
-
-			}, 1000 / 30 );
+			requestAnimationFrame( animate );
 
 			// do the render
 			render();
