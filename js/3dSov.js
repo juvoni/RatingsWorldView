@@ -63,7 +63,7 @@ var	mesh5;
 					preserveDrawingBuffer: true	// to allow screenshot
 			});
 				Detector.addGetWebGLMessage();
-				//return true;
+				return true;
 			}
 			renderer.setClearColorHex( COLOR, 1 );
 			renderer.setSize( WIDTH, HEIGHT );
@@ -104,26 +104,26 @@ var	mesh5;
 			var light	= new THREE.DirectionalLight(0xCCCC00);
 			light.position.set( Math.random(), Math.random(), Math.random() ).normalize();
 			scene.add( light );
-			var light	= new THREE.DirectionalLight( Math.random() * 0xffffff );
+			var light	= new THREE.DirectionalLight( Math.random() * 0x6fcff3 );
 			light.position.set( Math.random(), Math.random(), Math.random() ).normalize();
 			scene.add( light );
 			var light	= new THREE.DirectionalLight( 0xCCCC00 );
 			light.position.set( -Math.random(), -Math.random(), -Math.random() ).normalize();
 			scene.add( light );
+			var light	= new THREE.PointLight( Math.random() * 0x6fcff3 );
+			light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
+						.normalize().multiplyScalar(1.2);
+			scene.add( light );
 			var light	= new THREE.PointLight( Math.random() * 0xffffff );
 			light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
 						.normalize().multiplyScalar(1.2);
 			scene.add( light );
-			// var light	= new THREE.PointLight( Math.random() * 0xffffff );
-			// light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
-			//			.normalize().multiplyScalar(1.2);
-			// scene.add( light );
-			// var light	= new THREE.PointLight( Math.random() * 0xffffff );
-			// light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
-			//			.normalize().multiplyScalar(1.2);
-			// scene.add( light );
+			var light	= new THREE.PointLight( Math.random() * 0xffffff );
+			light.position.set( Math.random()-0.5, Math.random()-0.5, Math.random()-0.5 )
+						.normalize().multiplyScalar(1.2);
+			scene.add( light );
 
-			var material 	= new THREE.MeshLambertMaterial({ambient: 0xffffff, color:0x66CCFF});//808080
+			var material 	= new THREE.MeshLambertMaterial({ambient: 0x6fcff3, color:0x66CCFF});//808080
 			             	
 			var Cmaterial	= new THREE.MeshLambertMaterial({ambient: 0xffffff, color: 0xFFCC00});//808080
 		
@@ -275,7 +275,11 @@ var	mesh5;
 			// loop on request animation loop
 			// - it has to be at the begining of the function
 			// - see details at http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
-			requestAnimationFrame( animate );
+			setTimeout( function() {
+
+				requestAnimationFrame( animate );
+
+			}, 1000 / 30 );
 
 			// do the render
 			render();
@@ -293,16 +297,16 @@ var	mesh5;
 			cameraControls.update();
 
 			// animate DirectionalLight
-			// scene.lights.forEach(function(light, idx){
-			//	if( light instanceof THREE.DirectionalLight === false )                       	return;
-			//	var ang                                                                       	= 0.0005 * PIseconds * (idx % 2 ? 1 : -1);
-			//	light.position.set(Math.cos(ang), Math.sin(ang), Math.cos(ang*2)).normalize();							
-			// });
+			scene.lights.forEach(function(light, idx){
+				if( light instanceof THREE.DirectionalLight === false )	return;
+				var ang = 0.0005 * PIseconds * (idx % 2 ? 1 : -1);
+				light.position.set(Math.cos(ang), Math.sin(ang), Math.cos(ang*2)).normalize();							
+			});
 			// animate PointLights
 			
-			//  scene.lights.forEach(function(light, idx){
-			//	if( light instanceof THREE.PointLight === false )	return;
-			//	var angle                                        	= 0.0005 * PIseconds * (idx % 2 ? 1 : -1) + idx * Math.PI/3;
+			// scene.lights.forEach(function(light, idx){
+			//	if( light instanceof THREE.PointLight === false ) return;
+			//	var angle = 0.0005 * PIseconds * (idx % 2 ? 1 : -1) + idx * Math.PI/3;
 			//	light.position.set(Math.cos(angle)*3, Math.sin(angle*3)*2, Math.cos(angle*2)).normalize().multiplyScalar(2);
 			// });
 	
