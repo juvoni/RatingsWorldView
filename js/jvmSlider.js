@@ -16,7 +16,7 @@
 
 $(window).load(function(){
 $.fn.sparkline.defaults.common.lineColor = '#CC0033';
-$.fn.sparkline.defaults.common.fillColor = '#99ccff';
+$.fn.sparkline.defaults.common.fillColor = '#6fcff3';//99ccff
 
 $.reject({  
         reject: {  
@@ -831,7 +831,7 @@ function colorIndiPerCent(){
 			else{
 				$(this).css('color','black');
 			}
-			$(this).animate({opacity:"0.6"},300);
+			$(this).animate({opacity:"0.8"},300);
 			$(this).append('&#37;');
 
 		});
@@ -901,7 +901,7 @@ function genGdpHist(){
 function radarInit(a,b,c,d,e){
 			var valu = [];
 			var valuToString = [];
-			$('#three2D').html('<canvas id="myRadar" width = "345px" height = "350px">[No canvas support]</canvas>');
+			$('#three2D').html('<canvas id="myRadar" width = "325px" height = "340px">[No canvas support]</canvas>');
 			if (arguments.length == 0){
 				valu = [0,0,0,0,0];
 				radar2 = new RGraph.Radar('myRadar', valu);
@@ -912,13 +912,14 @@ function radarInit(a,b,c,d,e){
 				for(var i = 0; i<valu.length;i++){
 					valuToString[i] = valu[i].toString();
 				}
-				radar2 = new RGraph.Radar('myRadar', valu);
-				radar2.Set('chart.tooltips', [valuToString[3],valuToString[0],valuToString[1],valuToString[2],valuToString[4]]);
+				radar2 = new RGraph.Radar('myRadar', [valu[2],valu[3],valu[1],valu[4],valu[0]]);
+				radar2.Set('chart.tooltips', [valuToString[2],valuToString[3],valuToString[1],valuToString[4],valuToString[0]]);
 			}
             radar2.Set('chart.labels', ['Monetary', 'Political', 'Fiscal','External','Economic']);
             radar2.Set('chart.background.circles.poly', true);
             radar2.Set('chart.background.circles.spacing', 30);
             radar2.Set('chart.colors', ['rgba(255,0,0,0.50)']);
+            radar2.Set('chart.zoom.factor', 1.0);
             radar2.Set('chart.axes.color', 'transparent');
             radar2.Set('chart.highlights', true);
             radar2.Set('chart.strokestyle', ['#FFCC00']);

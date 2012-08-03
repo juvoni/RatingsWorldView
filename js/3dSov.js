@@ -356,17 +356,6 @@ var	mesh5;
 
 var twoDRadar = function(){
 			var valu = [0,0,0,0,0];
-			
-			//[4,2,5,2,1.5]
+
 	        var radar2 = new RGraph.Radar('myRadar', valu);
-            radar2.Set('chart.labels', ['Monetary', 'Political', 'Fiscal','External','Economic']);
-            radar2.Set('chart.tooltips', ['4', '2', '5','2','1.5']);
-            radar2.Set('chart.background.circles.poly', true);
-            radar2.Set('chart.background.circles.spacing', 30);
-            radar2.Set('chart.colors', ['rgba(255,0,0,0.50)']);
-            radar2.Set('chart.axes.color', 'transparent');
-            radar2.Set('chart.highlights', true);
-            radar2.Set('chart.strokestyle', ['#FFCC00']);
-            RGraph.Effects.Radar.Grow(radar2);
-            //radar2.draw();
 };
