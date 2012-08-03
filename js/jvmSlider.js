@@ -575,9 +575,9 @@ $.reject({
             clearInterval( startSlide );
             
             //setting options for play/pause button to change appearance
-            var options;
-            options = {label:"play",icons:{primary: "ui-icon-play"}};
-            $play.button("option",options);
+            var Options;
+            Options = {label:"play",icons:{primary: "ui-icon-play"}};
+            $play.button("option",Options);
         }
     };
         
@@ -587,10 +587,10 @@ $.reject({
     function playPause() {
         if ($play.text() === "play") {
             
-            //setting options for play/pause button to change appearance
-            var options;
-            options = {label:"pause",icons:{primary: "ui-icon-pause"}};
-            $play.button("option",options);
+            //setting Options for play/pause button to change appearance
+            var Options;
+            Options = {label:"pause",icons:{primary: "ui-icon-pause"}};
+            $play.button("option",Options);
             
             //getting data of current position of slider and map parameters
             var s = $date.next(), val = (+(s.slider("values"))), min = 0, max = timePeriods;
@@ -610,10 +610,10 @@ $.reject({
             //stopping the slide if user hits play button again
             clearInterval( startSlide );
             
-            //setting options for play/pause button to change appearance
-            var options;
-            options = {label:"play", icons:{primary: "ui-icon-play"}};
-            $play.button("option", options);
+            //setting Options for play/pause button to change appearance
+            var Options;
+            Options = {label:"play", icons:{primary: "ui-icon-play"}};
+            $play.button("option", Options);
                             
             //getting data of current position of slider and map parameters
             var s = $date.next(), val = (+(s.slider("values"))), min = 0, max = timePeriods;
