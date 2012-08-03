@@ -5,8 +5,8 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<!--[if lt IE 9]><script type="text/javascript" src="js/lib/excanvas.js"></script><![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 	<script src = "js/Country.js"></script>
@@ -33,24 +33,28 @@
 	<script src="js/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
 	<script src="js/selectToUISlider.jQuery.js" type="text/javascript"></script> 
 	<script src="js/jvmSlider.js" type="text/javascript"></script>
-	<!--<script src="vendor/three.js/Three.js"></script>-->
+	<!--<script src="js/vendor/three.js/Three.js"></script>-->
 	<script src="js/jquery.reject.js"></script>
 	<script src="js/spin.min.js"></script>
-	<script src="vendor/three.js/Detector.js"></script>
+	<script src="js/vendor/three.js/Detector.js"></script>
 	<script src="fonts/helvetiker_regular.typeface.js"></script>
+	<script src="js/lib/RGraph.common.core.js" ></script>
+    <script src="js/lib/RGraph.common.dynamic.js" ></script>
+    <script src="js/lib/RGraph.common.tooltips.js" ></script>
+    <script src="js/lib/RGraph.common.effects.js" ></script>
+    <script src="js/lib/RGraph.radar.js" ></script>
+    <script src="js/bootstrap-button.js"></script>
+    
 
-	<!-- https://github.com/mrdoob/stats.js -->
-	<!--<script src="vendor/three.js/Stats.js"></script>-->
 	
 
-	<script src="vendor/threex.dragpancontrols.js"></script>
+	<script src="js/vendor/threex.dragpancontrols.js"></script>
 	<script src="js/3dSov.js"></script>
 
 
 <script>
 $(document).ready(function() {
-
-	
+// $('view-group').button('toggle');
 var threeD;
  $('#threeContainer').hide();
 	$('#CountryIdentifier').hide();
@@ -197,14 +201,21 @@ var threeD;
 		</div>
 
 	<div id="three">
+	    	<!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group -->
+	<!--	<div class = "ViewSwap">
 
-		<p>Click &amp; hold to rotate.</p>
+			<div class="view-group" data-toggle="buttons-radio">
+			  <button class="btn btn-danger">3D View</button>
+			  <button class="btn btn-danger">2D View</button>
+			</div>
+		</div> -->
+			<p>Click &amp; hold to rotate.</p>
+		
+
 		<p class="infoToClick">Double Click on a Country <b>Once</b>  <br> To Activate 3D</p>
 
 	</div>
 	</div>
 
-
-	
 </body>
 </html>

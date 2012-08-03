@@ -17,6 +17,7 @@
 $(window).load(function(){
 $.fn.sparkline.defaults.common.lineColor = '#CC0033';
 $.fn.sparkline.defaults.common.fillColor = '#CCCCCC';
+
 $.reject({  
         reject: {  
             all: false, // Microsoft Internet Explorer  
