@@ -557,6 +557,30 @@ p.cName{
     padding: 10px 0 0 0;
     margin: 0;
 }
+.ViewSwap{
+    width: 50%;
+    margin: 0px auto;
+}
+.view-group > .btn{
+    margin: -2px;
+}
+
+.ViewSwap button:first-child{
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-topright: 0px; 
+}
+.ViewSwap button:last-child{
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-topleft: 0px; 
+}
 
 /*!
  * Bootstrap v2.0.4
