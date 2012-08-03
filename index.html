@@ -54,7 +54,38 @@
 
 <script>
 $(document).ready(function() {
-$('view-group').bs_button('toggle');
+$('#three2D').hide();
+var state = true;
+$('button.btn').click(function(){
+	
+	if($(this).text() == "2D View"){
+		if(state == true){
+			console.log("2D");
+			$('#three2D').show();
+			$('#threeRender3D').hide();
+			$('.infoToClick').html("Click on a Country <b>Once</b>  <br> To Activate 2D");
+			
+			state = false;
+		}
+		//$('.infoToClick').replace()
+		
+	}
+	else if($(this).text()== "3D View"){
+		if(state == false){
+			console.log("3D");
+			$('#threeRender3D').show();
+			$('#three2D').hide();
+			$('.infoToClick').html("Double Click on a Country <b>Once</b>  <br> To Activate 3D");
+			state = true;
+
+		}
+		
+	}
+});
+
+
+$('.view-group').bs_button('toggle');
+
 var threeD;
  $('#threeContainer').hide();
 	$('#CountryIdentifier').hide();
@@ -150,19 +181,11 @@ var threeD;
 			<div class="gdpSection">
 
 						<ul class="gcon">
-						<li>
-							<p class="cName"></p>
-						</li>
-
-						<li>
-							<p class="gdpData"></p>
-						</li>
-						<li>
-							<div class = "arrow"></div><p class="gdpChange"></p><p class="gdpPerChange"></p><span class = "gdpLine"></span>
-						</li>
-					</ul>
+							<li><p class="cName"></p></li>
+							<li><p class="gdpData"></p></li>
+							<li><div class = "arrow"></div><p class="gdpChange"></p><p class="gdpPerChange"></p><span class = "gdpLine"></span></li>
+						</ul>
 						
-				
 					<p class="gdpPer"></p>
 				</div>
 	        </div>
@@ -186,7 +209,7 @@ var threeD;
 			</div>		
 	</div>
 
-	<canvas id="myRadar" width="300" height="300">[No canvas support]</canvas>
+	
 	<div class="sidePanel">
 		<div class="score"></div>
 		<h4>3D View</h4>
@@ -203,17 +226,17 @@ var threeD;
 	<div id="three">
 		<!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group -->
 		<div class = "ViewSwap">
-
 			<div class="view-group" data-toggle="buttons-radio">
-			  <button class="btn btn-danger active">3D View</button>
-			  <button class="btn btn-danger ">2D View</button>
-			</div>
+					<button class="btn btn-danger active">3D View</button>
+					<button class="btn btn-danger ">2D View</button>
+				</div>
 		</div> 
 			<p>Click &amp; hold to rotate.</p>
-			<div id="three2D"></div>
+			<div id="three2D">
+				<canvas id="myRadar">[No canvas support]</canvas>
+			</div>
 			<div id="threeRender3D"></div>
 		<p class="infoToClick">Double Click on a Country <b>Once</b>  <br> To Activate 3D</p>
-
 
 	</div>
 	</div>

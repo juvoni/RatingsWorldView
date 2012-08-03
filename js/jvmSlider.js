@@ -657,7 +657,7 @@ $.reject({
 				$Conid.show();
 				$Conid.css('width','90');
 				threeD = new threeSet();
-				twoDRadar();	
+				twoD = twoDRadar();	
 			});
 		}
 };

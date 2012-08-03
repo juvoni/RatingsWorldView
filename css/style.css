@@ -166,6 +166,9 @@ img.scale{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444');
     
 }
+canvas#myRadar{
+
+}
 #period{
     font-weight:bold;
     color:#333333;
