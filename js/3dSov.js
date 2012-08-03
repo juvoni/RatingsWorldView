@@ -33,7 +33,7 @@ var	mesh5;
 	var camera, cameraControl;
 	// set the scene size
 	var WIDTH = 350,
-    HEIGHT = 374;
+    HEIGHT = 355;
     var scoreVal = [];
 
 	// set some camera attributes
