@@ -355,7 +355,10 @@ var	mesh5;
 };
 
 var twoDRadar = function(){
-	        var radar2 = new RGraph.Radar('myRadar', [4,2,5,2,1.5]);
+			var valu = [0,0,0,0,0];
+			
+			//[4,2,5,2,1.5]
+	        var radar2 = new RGraph.Radar('myRadar', valu);
             radar2.Set('chart.labels', ['Monetary', 'Political', 'Fiscal','External','Economic']);
             radar2.Set('chart.tooltips', ['4', '2', '5','2','1.5']);
             radar2.Set('chart.background.circles.poly', true);
@@ -365,4 +368,8 @@ var twoDRadar = function(){
             radar2.Set('chart.highlights', true);
             radar2.Set('chart.strokestyle', ['#FFCC00']);
             RGraph.Effects.Radar.Grow(radar2);
+            //radar2.draw();
+            this.updateScore = function(a,b,c,d,e){
+				valu[0] = a, valu[1] = b, valu[2] = c, valu[3] = d, valu[4] = e;
+			};
 };

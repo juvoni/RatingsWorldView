@@ -176,6 +176,7 @@ $.reject({
 	}
 
 
+
 	$.getJSON('ajax/Data.json', function(data) {
 		
 		var i = 0;
@@ -332,7 +333,7 @@ $.reject({
 			
 		for (property in mapValues) timePeriods++;
 
-			var cnt = false;
+			//var cnt = false;
 	        // jVectorMap Options
 			
 			$(function() {
@@ -353,8 +354,8 @@ $.reject({
 							
 							var ex;
 
-							if(!cnt) $(this).dblclick(); 
-							cnt = true;	
+							//if(!cnt) $(this).dblclick(); 
+							//cnt = true;	
 							var newClass = 'flag flag-'+code.toLowerCase();
 							$('#CountryIdentifier #CountrySprite').attr('class', newClass);
 							$ConId.text(getThisCountry(code));
@@ -369,6 +370,9 @@ $.reject({
 							var dy = getScores(code);	
 							if (typeof threeD != "undefined") {
 								threeD.updateScore(dy[0],dy[1],dy[2],dy[3],dy[4]);
+							}
+							if(typeof twoDRadar != "undefined"){
+								radarInit(dy[0],dy[1],dy[2],dy[3],dy[4]);
 							}
 							if(typeof getThisCountryIndex(code) !=='undefined'){
 								currentCon = Cl[ getThisCountryIndex(code)];
@@ -643,6 +647,8 @@ $.reject({
 
 	function checkVersion_Init()
 	{
+			
+
 		var ver = getInternetExplorerVersion();
 		var text = '3D disabled due to incompatibility';
 		if ( ver >= 0.0 && ver <=8.0){
@@ -650,6 +656,8 @@ $.reject({
 			$three_p.remove();
 			$three.html('<p class = "sadInfo">'+text+'</p>'+'<hr>'+'<img class ="sad"src="images/sad_ie_v2.gif" alt="Sad Ie"></img>');
 			$three.css({width:'300px', height: '170px',marginTop:'115px'});
+			
+
 		}
 		else if(ver >= 9.0 ||ver <= -1){
 			$map.one("click", function(event) {
@@ -657,7 +665,7 @@ $.reject({
 				$Conid.show();
 				$Conid.css('width','90');
 				threeD = new threeSet();
-				twoD = twoDRadar();	
+				
 			});
 		}
 };
@@ -851,3 +859,29 @@ function genGdpHist(){
 		}
 };
 
+function radarInit(a,b,c,d,e){
+			var valu = [];
+			var valuToString = [];
+			$('#three2D').html('<canvas id="myRadar" width = "325px" height = "350px">[No canvas support]</canvas>');
+			if (arguments.length == 0){
+				valu = [0,0,0,0,0];
+				radar2 = new RGraph.Radar('myRadar', valu);
+				radar2.Set('chart.tooltips', ['0', '0', '0','0','0']);
+			}
+			else{
+				valu = [a,b,c,d,e];
+				for(var i = 0; i<valu.length;i++){
+					valuToString[i] = valu[i].toString();
+				}
+				radar2 = new RGraph.Radar('myRadar', valu);
+				radar2.Set('chart.tooltips', [valuToString[0],valuToString[1],valuToString[2],valuToString[3],valuToString[4]]);
+			}
+            radar2.Set('chart.labels', ['Monetary', 'Political', 'Fiscal','External','Economic']);
+            radar2.Set('chart.background.circles.poly', true);
+            radar2.Set('chart.background.circles.spacing', 30);
+            radar2.Set('chart.colors', ['rgba(255,0,0,0.50)']);
+            radar2.Set('chart.axes.color', 'transparent');
+            radar2.Set('chart.highlights', true);
+            radar2.Set('chart.strokestyle', ['#FFCC00']);
+            RGraph.Effects.Radar.Grow(radar2);
+};
