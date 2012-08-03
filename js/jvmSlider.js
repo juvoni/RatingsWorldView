@@ -76,7 +76,7 @@ $.reject({
 	numOfNewFromNr;
 
 
-	AffB = [],DowB = [],UpB = [],NewB = [],ConfB = [],NrB = [], gdpHist = [], gdpChg = [], gdpPerChg = [];
+	AffB = [],DowB = [],UpB = [],NewB = [],ConfB = [],NrB = [], gdpHist = [], gdpChg = [], gdpPerChg = [], radValu = [];
 
 	uiVal = '';
 
@@ -175,14 +175,48 @@ $.reject({
 		return scoreArray; 
 	}
 
+	getScoresRadar = function(conName){
+		var c = conName.toUpperCase();
+		
+		var scoreArray = [];
+		for(var conSelect = 0; conSelect<Cl.length; conSelect++){
+			if(Cl[conSelect].countryCode() !== 'undefined'){
+				if(Cl[conSelect].countryCode() === c){
+					for(var t = 0; t<5;t++){
+						switch(t){
+							case 0: scoreArray[t] = scoreIndex(Cl[conSelect].getScore().political());
+							break;
+							case 1: scoreArray[t] = scoreIndex(Cl[conSelect].getScore().fiscal());
+							break;
+							case 2: scoreArray[t] = scoreIndex(Cl[conSelect].getScore().external());
+							break;
+							case 3: scoreArray[t] = scoreIndex(Cl[conSelect].getScore().monetary());
+							break;
+							case 4: scoreArray[t] = scoreIndex(Cl[conSelect].getScore().economic());
+							break;
+							default:
+						}
+					}
+					break;
+				}
+				else{
+					for(var not = 0; not<5;not++){
+						scoreArray[not] = 0;
+					}
+				}
+			}
+
+		}
+		return scoreArray; 
+	}
 
 
 	$.getJSON('ajax/Data.json', function(data) {
 		
 		var i = 0;
 		var n = 0;
-		var rsa = [],
-		scoreO;
+		
+		var scoreO;
 
 			for(var de = 0; de<11; de++){
 				if(de >=1){
@@ -194,7 +228,7 @@ $.reject({
 			}
 		var re;
 		$.each(data, function(){
-
+			var rsa = [];
 			debtObj.push(new Debt(this['Rating'], new Date(this['Release Date']), this['Rtg Action'], this['Rtg Symbol Sort'], new Date(this['As of Year'])));							
 			 if($.inArray(this['Name'],countrylimit) === -1 ){
 				for(var fi = 0; fi<5;fi++){
@@ -368,18 +402,23 @@ $.reject({
 							var textW = ($ConId.width()+ex)+'px';
 							$Conid.css('width',textW);
 							var dy = getScores(code);	
-							if (typeof threeD != "undefined") {
-								threeD.updateScore(dy[0],dy[1],dy[2],dy[3],dy[4]);
-							}
-							if(typeof twoDRadar != "undefined"){
-								radarInit(dy[0],dy[1],dy[2],dy[3],dy[4]);
-							}
+
 							if(typeof getThisCountryIndex(code) !=='undefined'){
 								currentCon = Cl[ getThisCountryIndex(code)];
+								
 								var num = currentCon.getDebtOfYear(selectedYear).GdP();
 								
 							}
+							if (typeof threeD != "undefined") {
+								threeD.updateScore(dy[0],dy[1],dy[2],dy[3],dy[4]);
+							}
 							
+							if(typeof twoDRadar != "undefined"){
+								for(var i = 0; i<dy.length;i++){
+									radValu[i] = scoreValN[dy[i]];
+								}
+									radarInit(radValu[0],radValu[1],radValu[2],radValu[3],radValu[4]);
+							}
 							if(typeof num !== 'undefined'){
 								$gdp.text('GDP:'+formatCurrency(num));
 								$conName.text(currentCon.countryName());
@@ -862,7 +901,7 @@ function genGdpHist(){
 function radarInit(a,b,c,d,e){
 			var valu = [];
 			var valuToString = [];
-			$('#three2D').html('<canvas id="myRadar" width = "325px" height = "350px">[No canvas support]</canvas>');
+			$('#three2D').html('<canvas id="myRadar" width = "345px" height = "350px">[No canvas support]</canvas>');
 			if (arguments.length == 0){
 				valu = [0,0,0,0,0];
 				radar2 = new RGraph.Radar('myRadar', valu);
@@ -874,7 +913,7 @@ function radarInit(a,b,c,d,e){
 					valuToString[i] = valu[i].toString();
 				}
 				radar2 = new RGraph.Radar('myRadar', valu);
-				radar2.Set('chart.tooltips', [valuToString[0],valuToString[1],valuToString[2],valuToString[3],valuToString[4]]);
+				radar2.Set('chart.tooltips', [valuToString[3],valuToString[0],valuToString[1],valuToString[2],valuToString[4]]);
 			}
             radar2.Set('chart.labels', ['Monetary', 'Political', 'Fiscal','External','Economic']);
             radar2.Set('chart.background.circles.poly', true);

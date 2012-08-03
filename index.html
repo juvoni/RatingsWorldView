@@ -54,28 +54,29 @@
 
 <script>
 $(document).ready(function() {
-$('#three2D').hide();
+$('#threeRender3D').hide();
 var state = true;
 $('button.btn').click(function(){
 	
-	if($(this).text() == "2D View"){
+	if($(this).text() == "3D View"){
 		if(state == true){
-			console.log("2D");
-			$('#three2D').show();
-			$('#threeRender3D').hide();
-			$('.infoToClick').html("Click on a Country <b>Once</b>  <br> To Activate 2D");
+			//console.log("2D");
+			$('#threeRender3D').show();
+			$('#three2D').hide();
+			$('.infoToClick').html("Double Click on a Country <b>Once</b>  <br> To Activate 3D");
+
 			
 			state = false;
 		}
 		//$('.infoToClick').replace()
 		
 	}
-	else if($(this).text()== "3D View"){
+	else if($(this).text()== "2D View"){
 		if(state == false){
-			console.log("3D");
-			$('#threeRender3D').show();
-			$('#three2D').hide();
-			$('.infoToClick').html("Double Click on a Country <b>Once</b>  <br> To Activate 3D");
+			//console.log("3D");
+			$('#three2D').show();
+			$('#threeRender3D').hide();
+			$('.infoToClick').html("Click on a Country <b>Once</b>  <br> To Activate 2D");
 			state = true;
 
 		}
@@ -212,7 +213,7 @@ var threeD;
 	
 	<div class="sidePanel">
 		<div class="score"></div>
-		<h4>3D View</h4>
+		<h4>Visual Chart</h4>
 
 	<a class = "slide"href="" title="">
 	</a>
@@ -227,8 +228,8 @@ var threeD;
 		<!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group -->
 		<div class = "ViewSwap">
 			<div class="view-group" data-toggle="buttons-radio">
-					<button class="btn btn-danger active">3D View</button>
-					<button class="btn btn-danger ">2D View</button>
+					<button class="btn btn-danger active">2D View</button>
+					<button class="btn btn-danger ">3D View</button>
 				</div>
 		</div> 
 			<p>Click &amp; hold to rotate.</p>
@@ -236,7 +237,7 @@ var threeD;
 				
 			</div>
 			<div id="threeRender3D"></div>
-		<p class="infoToClick">Double Click on a Country <b>Once</b>  <br> To Activate 3D</p>
+		<p class="infoToClick">Click on a Country <b>Once</b>  <br> To Activate 2D</p>
 
 	</div>
 	</div>

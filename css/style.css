@@ -167,7 +167,7 @@ img.scale{
     
 }
 canvas#myRadar{
-
+    margin-left: 10px;
 }
 #period{
     font-weight:bold;
@@ -561,8 +561,9 @@ p.cName{
     margin: 0;
 }
 .ViewSwap{
-    width: 50%;
+    width: 40%;
     margin: 0px auto;
+    padding: 3px;
 }
 .view-group > .btn{
     margin: -2px;

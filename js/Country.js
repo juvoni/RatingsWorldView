@@ -147,13 +147,14 @@ function Score(poli, fisc, exter, monet, econ){
 
 
 };
-function Country( ID, LegalName, cName, cr , deb, sc){
+function Country( ID, LegalName, cName, cr , deb, sc, valueSco){
 	var orgID = ID,
 	countryLegalName = LegalName,
 	countryName = cName,
 	countryRegion = cr;
 	var debtB = [];
 	var ratingScore = sc;
+	var valuRating;
 
 	debtB.push(deb);
 
@@ -278,6 +279,10 @@ function Country( ID, LegalName, cName, cr , deb, sc){
 	};
 	this.getScore = function(){
 		return ratingScore;
+	};
+
+	this.getvaluRating = function(){
+		return valuRating;
 	};
 
 return true;

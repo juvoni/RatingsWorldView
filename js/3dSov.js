@@ -369,7 +369,4 @@ var twoDRadar = function(){
             radar2.Set('chart.strokestyle', ['#FFCC00']);
             RGraph.Effects.Radar.Grow(radar2);
             //radar2.draw();
-            this.updateScore = function(a,b,c,d,e){
-				valu[0] = a, valu[1] = b, valu[2] = c, valu[3] = d, valu[4] = e;
-			};
 };
