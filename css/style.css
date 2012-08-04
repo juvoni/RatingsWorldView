@@ -270,7 +270,7 @@ ul.gcon{
 }
 .gdpSection{
     display:block;
-    width: 95%;
+    width: 100%;
     height:150px;
     margin-left: 10px;
     border: 1px solid #E3E3E3;
@@ -281,10 +281,12 @@ ul.gcon{
 }
 .gdpData{
     font-size: 14px;
+    margin-left: 10px;
     font-weight: 350;
 }
 .gdpLine{
     margin-top: -15px;
+    margin-right: 5px;
     float: right;
 }
 p.gdpChange{
@@ -447,7 +449,9 @@ ul.ticker li:last-child{
 }
 
 p.cName{
+    position: relative;
     margin-left: 10px;
+    margin-top: -20px;
     font-weight: bold;
     font-size: 24px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
