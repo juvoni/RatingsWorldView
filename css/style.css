@@ -271,7 +271,7 @@ ul.gcon{
 .gdpSection{
     display:block;
     width: 100%;
-    height:150px;
+    height:120px;
     margin-left: 10px;
     border: 1px solid #E3E3E3;
     -webkit-border-radius: 4px;
@@ -280,9 +280,15 @@ ul.gcon{
     float: left;
 }
 .gdpData{
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 10px;
-    font-weight: 350;
+    font-weight: 530;
+
+}
+.gdpData span{
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
 }
 .gdpLine{
     margin-top: -15px;
@@ -327,13 +333,9 @@ p.gdpChange{
     background-repeat: no-repeat;
     background-image: url('../images/arrow.png');
 }
-.red{
-    width: 10px;
-    height: 10px;
-    background-position: -10px 0;
-}
-.green{
-    background-position: -0px 0;
+
+.gcon .arrow{
+    margin-left: 10px;
 }
 
 ul.ticker{
@@ -450,11 +452,17 @@ ul.ticker li:last-child{
 
 p.cName{
     position: relative;
-    margin-left: 10px;
+    margin-left: 26px;
     margin-top: -20px;
-    font-weight: bold;
-    font-size: 24px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Helvetica Neue",Arial,Helvetica, sans-serif;
+}
+ul.gcon li img#CountrySprite {
+    width: 16px;
+    height: 11px;
+    margin-left: 3px;
+    position: inline;
 }
 
 

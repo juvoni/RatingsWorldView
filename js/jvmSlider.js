@@ -387,11 +387,10 @@ $.reject({
 						onRegionClick: function (event, code) {
 							
 							var ex;
-
-							//if(!cnt) $(this).dblclick(); 
-							//cnt = true;	
+	
 							var newClass = 'flag flag-'+code.toLowerCase();
 							$('#CountryIdentifier #CountrySprite').attr('class', newClass);
+							$('.gdpSection #CountrySprite').attr('class', newClass);
 							$ConId.text(getThisCountry(code));
 							if($ConId.width() >= 70){
 								ex = 85;
@@ -420,7 +419,7 @@ $.reject({
 									radarInit(radValu[0],radValu[1],radValu[2],radValu[3],radValu[4]);
 							}
 							if(typeof num !== 'undefined'){
-								$gdp.text('GDP:'+formatCurrency(num));
+								$gdp.html('GDP: '+'<span>'+formatCurrency(num)+'</span>');
 								$conName.text(currentCon.countryName());
 								genGdpHist();
 								$gdpChange.text(formatCurrency(gdpChg[uiVal+0]));
@@ -501,7 +500,7 @@ $.reject({
 						if(currentCon !== ''){
 								var num = currentCon.getDebtOfYear(selectedYear).GdP();
 								
-								$gdp.text('GDP:'+formatCurrency(num));
+								$gdp.html('GDP: '+'<span>'+formatCurrency(num)+'</span>');
 								$gdpChange.text(formatCurrency(gdpChg[ui.value]));
 								$gdpPerChange.text(gdpPerChg[ui.value].toFixed(2));
 								colorIndiGdp();
@@ -539,7 +538,7 @@ $.reject({
 			selectedYear= val+startDate+1;
 			if(currentCon !== ''){
 				var num = currentCon.getDebtOfYear(selectedYear).GdP();
-				$gdp.text('GDP:'+formatCurrency(num));
+				$gdp.html('GDP: '+'<span>'+formatCurrency(num)+'</span>');
 				$gdpChange.text(formatCurrency(gdpChg[val+1]));
 				$gdpPerChange.text(gdpPerChg[val+1].toFixed(2));
 				colorIndiGdp();
@@ -582,7 +581,7 @@ $.reject({
             selectedYear = val+startDate;
 			if(currentCon !== ''){
 				var num = currentCon.getDebtOfYear(selectedYear).GdP();
-				$gdp.text('GDP:'+formatCurrency(num));
+				$gdp.html('GDP: '+'<span>'+formatCurrency(num)+'</span>');
 				$gdpChange.text(formatCurrency(gdpChg[val]));
 				$gdpPerChange.text(gdpPerChg[val].toFixed(2));
 				colorIndiGdp();
