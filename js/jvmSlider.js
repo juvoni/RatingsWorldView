@@ -922,7 +922,7 @@ function radarInit(a,b,c,d,e){
             radar2.Set('chart.axes.color', 'transparent');
             radar2.Set('chart.highlights', true);
             radar2.Set('chart.strokestyle', ['#FFCC00']);
-            radar2.Set('chart.gutter.right', 20);
+           
 
             RGraph.Effects.Radar.Grow(radar2);
 };

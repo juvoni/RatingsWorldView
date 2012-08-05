@@ -8,6 +8,8 @@
     top: 5px;
     font-size: 80%; 
     font-family:"Segoe UI","Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #e3e3e3;
+    background: #ececec;
 }
 .ui-slider .ui-slider-handle  {
 	overflow: visible !important;
