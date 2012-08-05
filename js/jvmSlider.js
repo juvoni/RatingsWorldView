@@ -900,7 +900,7 @@ function genGdpHist(){
 function radarInit(a,b,c,d,e){
 			var valu = [];
 			var valuToString = [];
-			$('#three2D').html('<canvas id="myRadar" width = "325px" height = "340px">[No canvas support]</canvas>');
+			$('#three2D').html('<canvas id="myRadar" width = "353px" height = "340px">[No canvas support]</canvas>');
 			if (arguments.length == 0){
 				valu = [0,0,0,0,0];
 				radar2 = new RGraph.Radar('myRadar', valu);
@@ -922,5 +922,7 @@ function radarInit(a,b,c,d,e){
             radar2.Set('chart.axes.color', 'transparent');
             radar2.Set('chart.highlights', true);
             radar2.Set('chart.strokestyle', ['#FFCC00']);
+            radar2.Set('chart.gutter.right', 20);
+
             RGraph.Effects.Radar.Grow(radar2);
 };

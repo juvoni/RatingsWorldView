@@ -148,12 +148,12 @@ img.scale{
     z-index: 2;
     margin-top: -520px;
     margin-bottom: 0px;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
 #three{
-    width:350px;
-    height: 394px;
+    width:360px;
+    height: 400px;
     background-color: #ffffff;
     display:block;
     border-width: 1px;
@@ -167,7 +167,7 @@ img.scale{
     
 }
 canvas#myRadar{
-    margin-left: 15px;
+    margin-left: 5px;
 }
 #period{
     font-weight:bold;
