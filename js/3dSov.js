@@ -81,7 +81,7 @@ var	mesh5;
 
 			// put a camera in the scene
 			camera	= new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR);
-			camera.position.set(2, 3, 8);
+			camera.position.set(1, 0, 8.8);
 			scene.add(camera);
 
 			var controlArea = document.getElementById('threeRender3D');
