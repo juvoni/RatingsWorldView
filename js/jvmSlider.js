@@ -40,6 +40,9 @@ $.reject({
 	$gdp = $('.gdp');
 	$gdpChange = $('.gdpChange');
 	$gdpPerChange = $('.gdpPerChange');
+	$threeRender3D = $('threeRender3D');
+	$myRadar = $('#myRadar');
+	$threeRender3D = $('#threeRender3D');
 	
 
 	$period = $('#period');
@@ -56,7 +59,7 @@ $.reject({
 
 
 
-	checkVersion_Init();
+	
 
 	//------Edit Start---
 	var Cl = [];
@@ -79,7 +82,7 @@ $.reject({
 	AffB = [],DowB = [],UpB = [],NewB = [],ConfB = [],NrB = [], gdpHist = [], gdpChg = [], gdpPerChg = [], radValu = [];
 
 	uiVal = '';
-
+	checkVersion_Init();
 	var mapBColor = '#FFFFFF';
 
 	mapSetBGColor = function(value){
@@ -388,9 +391,7 @@ $.reject({
 							
 							var ex;
 	
-							var newClass = 'flag flag-'+code.toLowerCase();
-							$('#CountryIdentifier #CountrySprite').attr('class', newClass);
-							$('.gdpSection #CountrySprite').attr('class', newClass);
+							
 							$ConId.text(getThisCountry(code));
 							if($ConId.width() >= 70){
 								ex = 85;
@@ -404,9 +405,10 @@ $.reject({
 
 							if(typeof getThisCountryIndex(code) !=='undefined'){
 								currentCon = Cl[ getThisCountryIndex(code)];
-								
 								var num = currentCon.getDebtOfYear(selectedYear).GdP();
-								
+								var newClass = 'flag flag-'+code.toLowerCase();
+							$('#CountryIdentifier #CountrySprite').attr('class', newClass);
+							$('.gdpSection #CountrySprite').attr('class', newClass);
 							}
 							if (typeof threeD != "undefined") {
 								threeD.updateScore(dy[0],dy[1],dy[2],dy[3],dy[4]);
@@ -690,20 +692,22 @@ $.reject({
 		var ver = getInternetExplorerVersion();
 		var text = '3D disabled due to incompatibility';
 		if ( ver >= 0.0 && ver <=8.0){
+			//$myRadar.show();
 			$infoToClick.remove();
 			$three_p.remove();
-			$three.html('<p class = "sadInfo">'+text+'</p>'+'<hr>'+'<img class ="sad"src="images/sad_ie_v2.gif" alt="Sad Ie"></img>');
-			$three.css({width:'300px', height: '170px',marginTop:'115px'});
+			$threeRender3D.html('<p class = "sadInfo">'+text+'</p>'+'<hr>'+'<img class ="sad"src="images/sad_ie_v2.gif" alt="Sad Ie"></img>')
+			//$three.html();
+			//$three.css({width:'300px', height: '170px',marginTop:'115px'});
 			
 
 		}
-		else if(ver >= 9.0 ||ver <= -1){
+		else if(ver > 8.0 || ver <= -1){
 			$map.one("click", function(event) {
+				$myRadar.show();
 				$infoToClick.remove();
 				$Conid.show();
 				$Conid.css('width','90');
 				threeD = new threeSet();
-				
 			});
 		}
 };
@@ -897,7 +901,7 @@ function genGdpHist(){
 		}
 };
 
-function radarInit(a,b,c,d,e){
+function radarInit(a_,b_,c_,d_,e_){
 			var valu = [];
 			var valuToString = [];
 			$('#three2D').html('<canvas id="myRadar" width = "353px" height = "340px">[No canvas support]</canvas>');
@@ -907,7 +911,7 @@ function radarInit(a,b,c,d,e){
 				radar2.Set('chart.tooltips', ['0', '0', '0','0','0']);
 			}
 			else{
-				valu = [a,b,c,d,e];
+				valu = [a_,b_,c_,d_,e_];
 				for(var i = 0; i<valu.length;i++){
 					valuToString[i] = valu[i].toString();
 				}

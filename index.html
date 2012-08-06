@@ -1,14 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>S&amp;P Ratings World View</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<!--[if lt IE 9]><script type="text/javascript" src="js/lib/excanvas.js"></script><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
 	<script src = "js/Country.js"></script>
 	<link rel="stylesheet" href="css/jquery-jvectormap.css" type="text/css" media="screen"/>
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
@@ -22,38 +21,27 @@
 	// </script>
     <link href="css/ui.slider.extras.css" media="screen" rel="stylesheet" type="text/css" />
     
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r49/Three.js"></script>
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r49/Three.js"></script>-->
 
 	
 	<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
-
+	<script src="js/vendor/three.js/Detector.js"></script>
+	<script src="js/3dSov.js"></script>
 	<script src="js/jquery-jvectormap.js"></script>
 	<script src="js/jquery.sparkline.min.js"></script>
 	<script src="js/jquery-jvectormap-world-en.js"></script>
 	<script src="js/jquery-ui-1.8.22.custom.min.js" type="text/javascript"></script>
 	<script src="js/selectToUISlider.jQuery.js" type="text/javascript"></script> 
 	<script src="js/jvmSlider.js" type="text/javascript"></script>
-	<!--<script src="js/vendor/three.js/Three.js"></script>-->
+	<script src="js/Three.js"></script>
 	<script src="js/jquery.reject.js"></script>
-	<script src="js/spin.min.js"></script>
-	<script src="js/vendor/three.js/Detector.js"></script>
 	<script src="fonts/helvetiker_regular.typeface.js"></script>
-	<script src="js/lib/RGraph.common.core.js" ></script>
-    <script src="js/lib/RGraph.common.dynamic.js" ></script>
-    <script src="js/lib/RGraph.common.tooltips.js" ></script>
-    <script src="js/lib/RGraph.common.effects.js" ></script>
-    <script src="js/lib/RGraph.radar.js" ></script>
-    <script src="js/bootstrap-button.js"></script>
-    
 
-	
-
-	<script src="js/vendor/threex.dragpancontrols.js"></script>
-	<script src="js/3dSov.js"></script>
 
 
 <script>
 $(document).ready(function() {
+$('#myRadar').hide();
 $('#threeRender3D').hide();
 var state = true;
 $('button.btn').click(function(){
@@ -68,8 +56,6 @@ $('button.btn').click(function(){
 			
 			state = false;
 		}
-		//$('.infoToClick').replace()
-		
 	}
 	else if($(this).text()== "2D View"){
 		if(state == false){
@@ -87,7 +73,8 @@ $('button.btn').click(function(){
 
 $('.view-group').bs_button('toggle');
 
-var threeD;
+// var threeD;
+// var twoDRadar;
  $('#threeContainer').hide();
 	$('#CountryIdentifier').hide();
  // toggles the slickbox on clicking the noted link 
@@ -237,7 +224,8 @@ var threeD;
 		</div> 
 			<p>Click &amp; hold to rotate.</p>
 			<div id="three2D">
-				
+				<!-- <canvas id="myRadar" width = "353px" height = "340px">[No canvas support]</canvas> -->
+				<div id="myCanvas"></div>
 			</div>
 			<div id="threeRender3D"></div>
 		<p class="infoToClick">Click on a Country <b>Once</b>  <br> To Activate 2D</p>
@@ -245,6 +233,15 @@ var threeD;
 	</div>
 	</div>
 
+	<script src="js/lib/RGraph.common.core.js" ></script>
+    <script src="js/lib/RGraph.common.dynamic.js" ></script>
+    <script src="js/lib/RGraph.common.tooltips.js" ></script>
+    <script src="js/lib/RGraph.common.effects.js" ></script>
+    <script src="js/lib/RGraph.radar.js" ></script>
+    <script src="js/lib/canvas2image.js" ></script>
+    <script src="js/bootstrap-button.js"></script>
 
+	<script src="js/vendor/threex.dragpancontrols.js"></script>
+	
 </body>
 </html>

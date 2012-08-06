@@ -63,7 +63,7 @@ var	mesh5;
 					preserveDrawingBuffer: true	// to allow screenshot
 			});
 				Detector.addGetWebGLMessage();
-				return true;
+				//return true;
 			}
 			renderer.setClearColorHex( COLOR, 1 );
 			renderer.setSize( WIDTH, HEIGHT );
@@ -337,12 +337,9 @@ var	mesh5;
 			}
 		};
 
-
 };
 
 var twoDRadar = function(){
 			var valu = [0,0,0,0,0];
-
 	        var radar2 = new RGraph.Radar('myRadar', valu);
-	        radar2.Set('chart.zoom.factor', 1.0);
 };
