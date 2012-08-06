@@ -1,8 +1,11 @@
 body { 
     font-family:"Segoe UI","Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-top: 0;
+    margin:0px;
 	margin-left:auto;
 	margin-right:auto;
+    padding:0px;
+    overflow: auto;
+
 }
 
 html{
@@ -11,8 +14,8 @@ html{
 }
 #container{
     width: 1320px;
-    height:100%;
     margin: 0 auto;
+    padding:0px;
 }
 #container #loadingDiv img{
     margin: 0 auto;
@@ -102,8 +105,8 @@ div.scaleInfo ul{
 .legend{
     width: 180px;
     height:60px;
-    margin-top: 45px;
-    margin-right: 150px;
+    margin-top: 35px;
+    margin-right: 200px;
     color:#000000;
     position:relative;
     float: right;
@@ -146,9 +149,10 @@ img.scale{
     position:relative;
     border: none;
     z-index: 2;
-    margin-top: -520px;
+    margin-top: -600px;
     margin-bottom: 0px;
     margin-left: 35px;
+    padding:0px;
 }
 
 #three{
@@ -204,7 +208,7 @@ h2.big {
 .sidePanel{
     width: 45px;
     height: 125px;
-    bottom: 280px;
+    bottom: 330px;
     position:relative;
     border: none;
     display: visible;
@@ -465,7 +469,40 @@ ul.gcon li img#CountrySprite {
     position: inline;
 }
 
+#InfoSection{
+    margin: 0px auto;
+    position: relative;
+    display:block;
+    background: #eeeeee;
+    margin-top: 50px;
+    bottom: 0px;
+    width:400px;
+    height:20px;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 12px;
+}
+#InfoSection:hover{
+    opacity: 1;
+}
+#InfoSection p{
+    display:inline;
+}
+#InfoSection p a{
+    font-weight: bold;
+}
 
+#fiveCriteria li{
+    list-style-type: square;
+    font-family: "Helvetica Neue",Arial, Helvetica, sans-serif;
+    font-style: 10px;
+    font-weight: 350;
+}
+
+#criteriaChart {
+    position: relative;
+    margin-left: 130px;
+}
 
 
 
