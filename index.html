@@ -233,6 +233,57 @@ $('.view-group').bs_button('toggle');
 
 	</div>
 	</div>
+<script language="javascript">
+ 
+  $(document).ready(function() {
+ 
+    //Change these values to style your modal popup
+    var source = "RatingInformation.html";
+    var width = 820;
+    var align = "center";
+    var top = 10;
+    var padding = 10;
+    var backgroundColor = "#FFFFFF";
+    var borderColor = "#000000";
+    var borderWeight = 4;
+    var borderRadius = 5;
+    var fadeOutTime = 300;
+    var disableColor = "#000000";
+    var disableOpacity = 60;
+    var loadingImage = "images/ajax-loader.gif";
+ 
+    //This method initialises the modal popup
+    $(".modal").click(function() {
+ 
+        modalPopup( align,
+		    top,
+		    width,
+		    padding,
+		    disableColor,
+		    disableOpacity,
+		    backgroundColor,
+		    borderColor,
+		    borderWeight,
+		    borderRadius,
+		    fadeOutTime,
+		    source,
+		    loadingImage );
+ 
+    });	
+ 
+    //This method hides the popup when the escape key is pressed
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            closePopup(fadeOutTime);
+        }
+    });
+ 
+  });
+ 
+</script>
+
+<a class="modal" href="javascript:void(0);">Demo</a>
+
 
 	<script src="js/lib/RGraph.common.core.js" ></script>
     <script src="js/lib/RGraph.common.dynamic.js" ></script>
