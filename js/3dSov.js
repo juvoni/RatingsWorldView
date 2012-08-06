@@ -127,7 +127,7 @@ var	mesh5;
 			             	
 			var Cmaterial	= new THREE.MeshLambertMaterial({ambient: 0xffffff, color: 0xFFCC00});//808080
 		
-			for(var de = 0; de<11; de++){
+			for(var de = 0; de<13; de++){
 				if(de >=1){
 					scoreVal[de]=+ (scoreVal[de-1]+0.5);	
 				}
@@ -160,31 +160,31 @@ var	mesh5;
 						case 0: geoThin[fiveD][gC] = new THREE.CubeGeometry(0.5,0.5,scoreVal[gC]);//monetary
 								mesh[fiveD][gC] = new THREE.Mesh( geoThin[fiveD][gC], material );
 								mesh[fiveD][gC].position.z = 1.5;					
-								scT[fiveD][gC].position.z = 4;
+								scT[fiveD][gC].position.z = 5;
 								scT[fiveD][gC].position.y = -0.5;
 			
 						break;
 						case 1: geoThin[fiveD][gC] = new THREE.CubeGeometry(0.5,scoreVal[gC],0.5);//political
 								mesh[fiveD][gC] = new THREE.Mesh( geoThin[fiveD][gC], material );
 								mesh[fiveD][gC].position.y = 1.5;
-								scT[fiveD][gC].position.y = 4;
+								scT[fiveD][gC].position.y = 5;
 						break;
 						case 2: geoThin[fiveD][gC] = new THREE.CubeGeometry(scoreVal[gC],0.5,0.5);//external
 								mesh[fiveD][gC] = new THREE.Mesh( geoThin[fiveD][gC], material );
 								mesh[fiveD][gC].position.x = 1.5;					
-								scT[fiveD][gC].position.x = 4.0;
+								scT[fiveD][gC].position.x = 4.5;
 								scT[fiveD][gC].position.y = 0;
 						break;
 						case 3: geoThin[fiveD][gC] = new THREE.CubeGeometry(0.5,scoreVal[gC],0.5); //economic
 								mesh[fiveD][gC] = new THREE.Mesh( geoThin[fiveD][gC], material );
 								mesh[fiveD][gC].position.y = -1.5;
-								scT[fiveD][gC].position.y = -4.5;
+								scT[fiveD][gC].position.y = -5;
 								scT[fiveD][gC].position.z = 0;
 						break;
 						case 4: geoThin[fiveD][gC] = new THREE.CubeGeometry(scoreVal[gC],0.5,0.5); //fiscal
 								mesh[fiveD][gC] = new THREE.Mesh( geoThin[fiveD][gC], material );
 								mesh[fiveD][gC].position.x = -1.5;
-								scT[fiveD][gC].position.x = -4.5;
+								scT[fiveD][gC].position.x = -5;
 								scT[fiveD][gC].position.y = 0;
 								scT[fiveD][gC].position.z = 0;
 						break;
@@ -242,13 +242,13 @@ var	mesh5;
 
 			//Political
 			text[0].position.x = centerOffset;
-			text[0].position.y = 4.5;
+			text[0].position.y = 5.3;
 			text[0].position.z = 0;
 
 
 			//Economic
 			text[1].position.x = centerOffset1;
-			text[1].position.y = -5.0;
+			text[1].position.y = -5.5;
 			text[1].position.z = 0;
 
 
@@ -264,7 +264,7 @@ var	mesh5;
 
 			//Monetary
 			text[4].position.x = centerOffset2;
-			text[4].position.z = 4;
+			text[4].position.z = 5;
 
 
 		}

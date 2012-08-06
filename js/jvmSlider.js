@@ -221,7 +221,7 @@ $.reject({
 		
 		var scoreO;
 
-			for(var de = 0; de<11; de++){
+			for(var de = 0; de<13; de++){
 				if(de >=1){
 					scoreValN[de]=+ (scoreValN[de-1]+0.5);	
 				}
@@ -235,7 +235,7 @@ $.reject({
 			debtObj.push(new Debt(this['Rating'], new Date(this['Release Date']), this['Rtg Action'], this['Rtg Symbol Sort'], new Date(this['As of Year'])));							
 			 if($.inArray(this['Name'],countrylimit) === -1 ){
 				for(var fi = 0; fi<5;fi++){
-					re = Math.floor(Math.random()*(10-2 +1)+2);
+					re = Math.floor(Math.random()*(12-2 +1)+2);
 					rsa[fi] = scoreValN[re];
 				}
 				scoreO = new Score(rsa[0],rsa[1],rsa[2],rsa[3],rsa[4]);
@@ -926,6 +926,8 @@ function radarInit(a_,b_,c_,d_,e_){
             radar2.Set('chart.axes.color', 'transparent');
             radar2.Set('chart.highlights', true);
             radar2.Set('chart.strokestyle', ['#FFCC00']);
+            radar2.Set('chart.ymax', 6);
+
            
 
             RGraph.Effects.Radar.Grow(radar2);
